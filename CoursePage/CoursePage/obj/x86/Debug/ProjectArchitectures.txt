@@ -1,0 +1,1 @@
+D:\vs2017\CoursePage\CoursePage\CoursePage.csproj;x86

@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e0a31c7d-954f-41b0-8d9c-e615f037d57c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\vs2017\CoursePage\CoursePage\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\github code\UniversityLife\CoursePage\CoursePage\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\CoursePage.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.exe">
       <PackagePath>entrypoint\CoursePage.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
@@ -373,37 +373,37 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\CoursePage.xr.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.xr.xml">
       <PackagePath>CoursePage.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
@@ -412,11 +412,11 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator\Properties\LLMAnimator.rd.xml">
       <PackagePath>LLMAnimator\Properties\LLMAnimator.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\Core\CoursePage.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\CoursePage.exe">
       <PackagePath>CoursePage.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

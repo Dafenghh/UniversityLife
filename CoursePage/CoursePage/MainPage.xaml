@@ -178,6 +178,20 @@
                     </ListView.ItemContainerStyle>
                     <ListViewItem>
                         <Grid>
+                            <TextBlock>当前学期</TextBlock>
+                            <TextBlock x:Name="nowtermtext" Margin="0,0,20,0" HorizontalAlignment="Right" Foreground="#FF727272">大<Run Text="{Binding ElementName=YearText,Path=Text}"></Run> 第<Run Text="{Binding ElementName=TermText,Path=Text}"></Run>学期</TextBlock>
+                            <TextBlock Text=">" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                        </Grid>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <Grid>
+                            <TextBlock>当前周数</TextBlock>
+                            <TextBlock Text="{Binding ElementName=WeekText,Path=Text}" Margin="0,0,20,0" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                            <TextBlock Text=">" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                        </Grid>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <Grid>
                             <TextBlock>每日最大节数</TextBlock>
                             <TextBlock x:Name="weektext" Margin="0,0,20,0" HorizontalAlignment="Right" Foreground="#FF727272"><Run Text="{x:Bind data.maxCount}"></Run>节课</TextBlock>
                             <TextBlock Text=">" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>

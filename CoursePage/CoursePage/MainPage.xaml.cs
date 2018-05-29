@@ -172,6 +172,13 @@ namespace CoursePage
                 switch (list.SelectedIndex)
                 {
                     case 0:
+                        (Window.Current.Content as Frame).Navigate(typeof(TermSettingPage));
+                        break;
+                    case 1:
+                        var item = list.Items[list.SelectedIndex] as ListViewItem;
+                        WeekFlyout.ShowAt(item);
+                        break;
+                    case 2:
                         var dialog = new DialogBox()
                         {
                             Title = "设置课表最大节数",

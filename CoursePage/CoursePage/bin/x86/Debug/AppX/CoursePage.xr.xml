@@ -6,6 +6,10 @@
     <RootPropertyPathName Name="teacher" />
     <RootPropertyPathName Name="classroom" />
     <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="other" />
+    <RootPropertyPathName Name="term_cn" />
+    <RootPropertyPathName Name="grade" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -93,6 +97,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Style" />
       <RootProperty Name="Flyout" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -190,6 +195,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
+      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Background" />
@@ -277,5 +283,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.FlyoutPresenter" />
     <RootType FullName="CoursePage.MainPage" />
+    <RootType FullName="CoursePage.TermSettingPage" />
   </Roots.RootTypes>
 </Roots>

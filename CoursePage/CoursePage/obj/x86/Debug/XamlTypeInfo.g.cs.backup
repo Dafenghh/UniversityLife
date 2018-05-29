@@ -132,7 +132,7 @@ namespace CoursePage.CoursePage_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "CoursePage.DialogBox";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
@@ -147,9 +147,8 @@ namespace CoursePage.CoursePage_XamlTypeInfo
             _typeNameTable[11] = "CoursePage.LookCoursePage";
             _typeNameTable[12] = "CoursePage.LookCoursePage.CourseModel";
             _typeNameTable[13] = "CoursePage.MainPage";
-            _typeNameTable[14] = "CoursePage.TermSettingPage";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::CoursePage.DialogBox);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
@@ -164,7 +163,6 @@ namespace CoursePage.CoursePage_XamlTypeInfo
             _typeTable[11] = typeof(global::CoursePage.LookCoursePage);
             _typeTable[12] = typeof(global::CoursePage.LookCoursePage.CourseModel);
             _typeTable[13] = typeof(global::CoursePage.MainPage);
-            _typeTable[14] = typeof(global::CoursePage.TermSettingPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -204,7 +202,6 @@ namespace CoursePage.CoursePage_XamlTypeInfo
         private object Activate_9_CourseModel() { return new global::CoursePage.CourseModel(); }
         private object Activate_11_LookCoursePage() { return new global::CoursePage.LookCoursePage(); }
         private object Activate_13_MainPage() { return new global::CoursePage.MainPage(); }
-        private object Activate_14_TermSettingPage() { return new global::CoursePage.TermSettingPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -293,13 +290,6 @@ namespace CoursePage.CoursePage_XamlTypeInfo
             case 13:   //  CoursePage.MainPage
                 userType = new global::CoursePage.CoursePage_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_13_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  CoursePage.TermSettingPage
-                userType = new global::CoursePage.CoursePage_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_TermSettingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

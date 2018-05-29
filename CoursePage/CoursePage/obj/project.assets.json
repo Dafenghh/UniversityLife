@@ -25652,11 +25652,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\vs2017\\CoursePage\\CoursePage\\CoursePage.csproj",
+      "projectUniqueName": "D:\\github code\\UniversityLife\\CoursePage\\CoursePage\\CoursePage.csproj",
       "projectName": "CoursePage",
-      "projectPath": "D:\\vs2017\\CoursePage\\CoursePage\\CoursePage.csproj",
+      "projectPath": "D:\\github code\\UniversityLife\\CoursePage\\CoursePage\\CoursePage.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\vs2017\\CoursePage\\CoursePage\\obj\\",
+      "outputPath": "D:\\github code\\UniversityLife\\CoursePage\\CoursePage\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

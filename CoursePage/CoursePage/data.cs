@@ -20,6 +20,8 @@ namespace CoursePage
         public int endYear = 2018;
         public int term = 2;
         public int nowWeek = 13;
+        public List<MyTermListItem> myTermList;
+        
 
         public static string NumberToChinese(string numberStr)
         {
@@ -90,6 +92,33 @@ namespace CoursePage
         }
     }
 
+    public class MyTermListItem
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public long addTime { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long beginYear { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long id { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long maxCount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long studentId { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long term { get; set; }
+    }
 
     public class Tools
     {

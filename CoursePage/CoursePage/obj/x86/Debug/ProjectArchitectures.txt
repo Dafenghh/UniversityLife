@@ -1,1 +1,1 @@
-D:\vs2017\CoursePage\CoursePage\CoursePage.csproj;x86
+D:\github code\UniversityLife\CoursePage\CoursePage\CoursePage.csproj;x86

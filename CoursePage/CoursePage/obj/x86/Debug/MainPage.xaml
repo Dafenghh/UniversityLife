@@ -91,20 +91,20 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="White" Height="50" VerticalAlignment="Top">
-            <Button x:ConnectionId='11' x:Name="title1" Visibility="Collapsed" Background="{x:Null}" Style="{StaticResource FullButtonStyle}" HorizontalAlignment="Center">
+            <Button x:ConnectionId='12' x:Name="title1" Visibility="Collapsed" Background="{x:Null}" Style="{StaticResource FullButtonStyle}" HorizontalAlignment="Center">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock x:ConnectionId='15' x:Name="WeekText" FontSize="16" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock FontSize="13" Foreground="{ThemeResource Friday-Foreground}">大<Run x:ConnectionId='16' x:Name="YearText"></Run> 第<Run x:ConnectionId='17' x:Name="TermText"></Run>学期</TextBlock>
+                    <TextBlock x:ConnectionId='16' x:Name="WeekText" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock FontSize="13" Foreground="{ThemeResource Friday-Foreground}">大<Run x:ConnectionId='17' x:Name="YearText"></Run> 第<Run x:ConnectionId='18' x:Name="TermText"></Run>学期</TextBlock>
                 </StackPanel>
                 <Button.Flyout>
-                    <Flyout x:ConnectionId='18' x:Name="WeekFlyout">
+                    <Flyout x:ConnectionId='19' x:Name="WeekFlyout">
                         <Flyout.FlyoutPresenterStyle>
                             <Style TargetType="FlyoutPresenter">
                                 <Setter Property="Padding" Value="0"></Setter>
                             </Style>
                         </Flyout.FlyoutPresenterStyle>
                         <Grid Width="150" Height="200" Background="Azure">
-                            <ListView x:ConnectionId='19' x:Name="WeekList" Margin="0,0,0,35" SelectionMode="Single"                                             >
+                            <ListView x:ConnectionId='20' x:Name="WeekList" Margin="0,0,0,35" SelectionMode="Single"                                             >
                                 <ListView.ItemContainerStyle>
                                     <Style TargetType="ListViewItem">
                                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -119,20 +119,20 @@
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
-                            <Button x:ConnectionId='20' Height="35" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#33575757" Foreground="#FF4C8743" Content="设置为当前周"                           ></Button>
+                            <Button x:ConnectionId='21' Height="35" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#33575757" Foreground="#FF4C8743" Content="设置为当前周"                           ></Button>
                         </Grid>
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <StackPanel x:ConnectionId='12' x:Name="title2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel x:ConnectionId='13' x:Name="title2" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock FontSize="16" HorizontalAlignment="Center">课程表</TextBlock>
                 <TextBlock FontSize="13">未设置学期</TextBlock>
             </StackPanel>
-            <AppBarButton x:ConnectionId='13' HorizontalAlignment="Right"                          >
+            <AppBarButton x:ConnectionId='14' HorizontalAlignment="Right"                          >
                 <AppBarButton.Icon>
                     <SymbolIcon Width="30" Height="30" Symbol="Add" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <SymbolIcon.RenderTransform>
-                            <RotateTransform x:ConnectionId='14' x:Name="OpenSettingIconRT" CenterX="15" CenterY="15" Angle="0"/>
+                            <RotateTransform x:ConnectionId='15' x:Name="OpenSettingIconRT" CenterX="15" CenterY="15" Angle="0"/>
                         </SymbolIcon.RenderTransform>
                     </SymbolIcon>
                 </AppBarButton.Icon>
@@ -141,9 +141,9 @@
 
         <Grid Margin="0,50,0,0">
             <ScrollViewer x:ConnectionId='4' x:Name="CourseScrollViewer" HorizontalScrollBarVisibility="Visible">
-                <Grid x:ConnectionId='9' x:Name="CourseGrid">
+                <Grid x:ConnectionId='10' x:Name="CourseGrid">
                     <Grid.Background>
-                        <ImageBrush x:ConnectionId='10' x:Name="mainGridImage" Stretch="Fill"/>
+                        <ImageBrush x:ConnectionId='11' x:Name="mainGridImage" Stretch="Fill"/>
                     </Grid.Background>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30*"/>
@@ -176,6 +176,20 @@
                             <Setter Property="BorderThickness" Value="0,0,0,0.5"></Setter>
                         </Style>
                     </ListView.ItemContainerStyle>
+                    <ListViewItem>
+                        <Grid>
+                            <TextBlock>当前学期</TextBlock>
+                            <TextBlock x:ConnectionId='9' x:Name="nowtermtext" Margin="0,0,20,0" HorizontalAlignment="Right" Foreground="#FF727272">大<Run Text="{Binding ElementName=YearText,Path=Text}"></Run> 第<Run Text="{Binding ElementName=TermText,Path=Text}"></Run>学期</TextBlock>
+                            <TextBlock Text=">" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                        </Grid>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <Grid>
+                            <TextBlock>当前周数</TextBlock>
+                            <TextBlock Text="{Binding ElementName=WeekText,Path=Text}" Margin="0,0,20,0" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                            <TextBlock Text=">" HorizontalAlignment="Right" Foreground="#FF727272"></TextBlock>
+                        </Grid>
+                    </ListViewItem>
                     <ListViewItem>
                         <Grid>
                             <TextBlock>每日最大节数</TextBlock>

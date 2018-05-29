@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e0a31c7d-954f-41b0-8d9c-e615f037d57c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\vs2017\CoursePage\CoursePage\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\github code\UniversityLife\CoursePage\CoursePage\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>E65331A88A1F69C715A441EA8D1D4B4B939A6291E5A4BC54EF4BCB1E14687BA9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e0a31c7d-954f-41b0-8d9c-e615f037d57c_1.0.0.0_x86__75cr2b68sm664</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e0a31c7d-954f-41b0-8d9c-e615f037d57c_75cr2b68sm664!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-29T14:56:15.999</Modified>
+      <Modified>2018-05-29T15:27:04.378</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\CoursePage.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.exe">
       <PackagePath>entrypoint\CoursePage.exe</PackagePath>
-      <Modified>2018-05-29T14:56:15.097</Modified>
+      <Modified>2018-05-29T15:27:02.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
       <PackagePath>LLMAnimator.dll</PackagePath>
@@ -499,47 +499,47 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T15:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-05-29T07:12:36.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-13T14:13:42.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\CoursePage.xr.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.xr.xml">
       <PackagePath>CoursePage.xr.xml</PackagePath>
-      <Modified>2018-05-29T14:41:28.940</Modified>
+      <Modified>2018-05-29T15:27:02.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -549,14 +549,14 @@
       <PackagePath>LLMAnimator\Properties\LLMAnimator.rd.xml</PackagePath>
       <Modified>2016-01-08T11:11:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-29T14:56:15.680</Modified>
+      <Modified>2018-05-29T15:27:03.689</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017\CoursePage\CoursePage\bin\x86\Debug\Core\CoursePage.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\CoursePage.exe">
       <PackagePath>CoursePage.exe</PackagePath>
-      <Modified>2018-05-29T14:56:15.994</Modified>
+      <Modified>2018-05-29T15:27:04.370</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

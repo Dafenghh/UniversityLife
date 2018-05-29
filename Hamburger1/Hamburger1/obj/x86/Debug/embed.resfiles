@@ -1,0 +1,12 @@
+App.xbf
+Controls\AddTodoControl.xbf
+Styles\Custom.xbf
+Views\AddTodoPage.xbf
+Views\Busy.xbf
+Views\DetailPage.xbf
+Views\MainPage.xbf
+Views\RelaxPage.xbf
+Views\SettingsPage.xbf
+Views\Shell.xbf
+Views\Splash.xbf
+Views\TodoPage.xbf

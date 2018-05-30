@@ -3,10 +3,14 @@ Controls\AddTodoControl.xbf
 Styles\Custom.xbf
 Views\AddTodoPage.xbf
 Views\Busy.xbf
+Views\ContentDialog.xbf
 Views\DetailPage.xbf
+Views\EditCoursePage.xbf
+Views\LookCoursePage.xbf
 Views\MainPage.xbf
 Views\RelaxPage.xbf
 Views\SettingsPage.xbf
 Views\Shell.xbf
 Views\Splash.xbf
+Views\TermSettingPage.xbf
 Views\TodoPage.xbf

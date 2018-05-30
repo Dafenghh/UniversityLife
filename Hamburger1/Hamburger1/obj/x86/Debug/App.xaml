@@ -5,6 +5,20 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="Friday-Foreground" Color="#FF0799FC"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-BorderBrush" Color="#FFBFBFBF"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-DataBackground" Color="White"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-FrameBackground" Color="#FFBFBFBF"></SolidColorBrush>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="Friday-Foreground" Color="#FF0799FC"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-BorderBrush" Color="#FFBFBFBF"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-DataBackground" Color="White"></SolidColorBrush>
+                    <SolidColorBrush x:Key="Friday-FrameBackground" Color="#FFBFBFBF"></SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles\Custom.xaml" />
             </ResourceDictionary.MergedDictionaries>

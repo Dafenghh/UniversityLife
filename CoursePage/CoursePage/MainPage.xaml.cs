@@ -85,7 +85,6 @@ namespace CoursePage
                 if (week == i) grid.Background = new SolidColorBrush(Color.FromArgb(100, 7, 153, 252));
                 CourseGrid.Children.Add(grid);
             }
-
             for (int i = 1; i < CourseGrid.ColumnDefinitions.Count; i++)
             {
                 for (int j = 1; j < CourseGrid.RowDefinitions.Count; j++)

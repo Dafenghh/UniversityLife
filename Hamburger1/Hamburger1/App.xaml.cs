@@ -49,5 +49,6 @@ namespace Hamburger1
             // TODO: add your long-running task here
             await NavigationService.NavigateAsync(typeof(Views.MainPage));
         }
+
     }
 }

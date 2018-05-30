@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.14393": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2208,6 +2217,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-arm": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4497,6 +4515,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-arm-aot": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -6822,6 +6849,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x64": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -9120,6 +9156,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x64-aot": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -11454,6 +11499,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x86": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -13752,6 +13806,15 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x86-aot": {
+      "LLMAnimator/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LLMAnimator.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -16087,6 +16150,19 @@
     }
   },
   "libraries": {
+    "LLMAnimator/0.1.0": {
+      "sha512": "9i/g/VrnLmTkQv/FW3eAcOZbx4nRLcGFC79UiHHerrF6u2GG1aPR3aA0MeL2NvXauhYH9MSYAHfNSm2hNC+J/Q==",
+      "type": "package",
+      "path": "llmanimator/0.1.0",
+      "files": [
+        "lib/uap10.0/LLMAnimator.dll",
+        "lib/uap10.0/LLMAnimator.pdb",
+        "lib/uap10.0/LLMAnimator.pri",
+        "lib/uap10.0/LLMAnimator/Properties/LLMAnimator.rd.xml",
+        "llmanimator.0.1.0.nupkg.sha512",
+        "llmanimator.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -22317,6 +22393,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.14393": [
+      "LLMAnimator >= 0.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.3",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 1.1.0",
       "Newtonsoft.Json >= 9.0.1",
@@ -22324,26 +22401,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\apple\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apple\\source\\repos\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
+      "projectUniqueName": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
       "projectName": "Hamburger1",
-      "projectPath": "C:\\Users\\apple\\source\\repos\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
-      "packagesPath": "C:\\Users\\apple\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apple\\source\\repos\\Hamburger1\\Hamburger1\\obj\\",
+      "projectPath": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\apple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -22363,6 +22438,10 @@
     "frameworks": {
       "uap10.0.14393": {
         "dependencies": {
+          "LLMAnimator": {
+            "target": "Package",
+            "version": "[0.1.0, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[5.2.3, )"

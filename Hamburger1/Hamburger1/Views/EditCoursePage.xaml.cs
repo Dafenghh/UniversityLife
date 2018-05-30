@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Template10.Common;
+using Template10.Services.NavigationService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
@@ -68,11 +70,6 @@ namespace Hamburger1.Views
                 course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
             }
             mainListView.DataContext = course;
-        }
-
-        private void GoBackBtn_Clicked(object sender, RoutedEventArgs e)
-        {
-            Frame.GoBack();
         }
 
         private async void mainListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -265,6 +262,8 @@ namespace Hamburger1.Views
             //{
             //    Tools.ShowMsgAtFrame("请填写课程名称");
             //}
+            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+            nav.Navigate(typeof(MainPage), null);
         }
 
         public class CourseModel : Models.CourseModel

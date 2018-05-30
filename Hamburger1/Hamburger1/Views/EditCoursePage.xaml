@@ -19,7 +19,6 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid  Height="50" BorderBrush="{ThemeResource Friday-BorderBrush}" BorderThickness="0,0,0,0.5" VerticalAlignment="Top">
-            <AppBarButton Click="GoBackBtn_Clicked" Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Back"></AppBarButton>
             <TextBlock FontSize="18" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center">编辑课程</TextBlock>
             <Button Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Click="AddBtn_Clicked">确定</Button>
         </Grid>

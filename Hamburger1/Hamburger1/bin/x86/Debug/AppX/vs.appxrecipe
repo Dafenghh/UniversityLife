@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T11:06:42.995</Modified>
+      <Modified>2018-05-30T15:20:05.907</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.exe">
       <PackagePath>entrypoint\Hamburger1.exe</PackagePath>
-      <Modified>2018-05-30T11:06:41.038</Modified>
+      <Modified>2018-05-30T15:20:03.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
       <PackagePath>LLMAnimator.dll</PackagePath>
@@ -567,7 +567,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.xr.xml">
       <PackagePath>Hamburger1.xr.xml</PackagePath>
-      <Modified>2018-05-30T11:06:40.610</Modified>
+      <Modified>2018-05-30T15:08:16.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -612,11 +612,11 @@
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T11:06:42.231</Modified>
+      <Modified>2018-05-30T15:20:05.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\Hamburger1.exe">
       <PackagePath>Hamburger1.exe</PackagePath>
-      <Modified>2018-05-30T11:06:42.989</Modified>
+      <Modified>2018-05-30T15:20:05.899</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Template10.Common;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -47,11 +48,6 @@ namespace Hamburger1.Views
             Title.Text = course.name;
         }
 
-        private void GoBackBtn_Clicked(object sender, RoutedEventArgs e)
-        {
-            Frame.GoBack();
-        }
-
         private async void DelCourseBtn_Clicked(object sender, RoutedEventArgs e)
         {
             var dialog = new DialogBox()
@@ -63,12 +59,14 @@ namespace Hamburger1.Views
             dialog.mainTextBlock.Text = "确定要删除该课程?";
             //if (await dialog.ShowAsync() == ContentDialogResult.Secondary)
             //    await Class.Model.CourseManager.Remove(course);
-            Frame.GoBack();
+            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+            nav.Navigate(typeof(MainPage), null);
         }
 
         private void EditCourseBtn_Clicked(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+            nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
         }
 
         public class CourseModel : Models.CourseModel

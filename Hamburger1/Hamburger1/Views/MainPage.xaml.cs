@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Template10.Common;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
@@ -26,6 +27,7 @@ namespace Hamburger1.Views
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private Frame temp;
         public Data data;
         public MainPage()
         {
@@ -151,9 +153,9 @@ namespace Hamburger1.Views
             }
             else
             {
-                Frame frame = new Frame();
-                frame.Navigate(typeof(EditCoursePage), null);
-                Window.Current.Content = frame;
+
+                var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+                nav.Navigate(typeof(Views.EditCoursePage), null);
                 //Frame.Navigate(typeof(EditCoursePage));
                 //(Window.Current.Content as Frame).Navigate(typeof(CourseListPage), new string[] { Grid.GetRow(btn).ToString(), Grid.GetColumn(btn).ToString() });
             }

@@ -19,9 +19,8 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid  Height="50" BorderBrush="{ThemeResource Friday-BorderBrush}" BorderThickness="0,0,0,0.5" VerticalAlignment="Top">
-            <AppBarButton x:ConnectionId='10'                           Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Back"></AppBarButton>
             <TextBlock FontSize="18" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center">编辑课程</TextBlock>
-            <Button x:ConnectionId='11' Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch"                       >确定</Button>
+            <Button x:ConnectionId='10' Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch"                       >确定</Button>
         </Grid>
         <Grid Grid.Row="1" Height="20" BorderThickness="0,0,0,0.5" BorderBrush="{ThemeResource Friday-Foreground}" VerticalAlignment="Top">
             <TextBlock Foreground="{ThemeResource Friday-Foreground}" FontSize="12">当前课程</TextBlock>

@@ -153,6 +153,7 @@
       <RootProperty Name="VisualStateNormalMinWidth" />
       <RootProperty Name="Frame" />
       <RootProperty Name="Text" />
+      <RootProperty Name="SecondaryCommands" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -402,6 +403,7 @@
       <RootMethod Name="SetAccessibilityView" />
     </RootType>
     <RootType FullName="Hamburger1.Views.LookCoursePage" />
+    <RootType FullName="Hamburger1.ViewModels.MainPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
       <RootProperty Name="Duration" />
       <RootProperty Name="From" />
@@ -415,9 +417,9 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Icon" />
+      <RootProperty Name="Label" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Label" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">

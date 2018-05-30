@@ -13,7 +13,7 @@
       mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:DetailPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+        <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
     </Page.DataContext>
 
     <Page.Resources>
@@ -129,10 +129,18 @@
         </VisualStateManager.VisualStateGroups>
 
         <!--  header  -->
-        <controls:PageHeader x:ConnectionId='9' x:Name="pageHeader"                       
-                             RelativePanel.AlignLeftWithPanel="True"
+        <controls:PageHeader x:ConnectionId='9' x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="CourseTable" />
+                             RelativePanel.AlignTopWithPanel="True" Text="CourseTable">
+
+            <!--  secondary commands  -->
+            <controls:PageHeader.SecondaryCommands>
+                <AppBarButton x:ConnectionId='28'                                         Label="Settings" />
+                <AppBarButton x:ConnectionId='29'                                        Label="Privacy" />
+                <AppBarButton x:ConnectionId='30'                                      Label="About" />
+            </controls:PageHeader.SecondaryCommands>
+
+        </controls:PageHeader>
 
         <!--  content  -->
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 

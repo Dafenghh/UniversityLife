@@ -156,7 +156,7 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[87];
+            _typeNameTable = new string[88];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -225,27 +225,28 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
             _typeNameTable[65] = "Hamburger1.Models.CourseModel";
             _typeNameTable[66] = "Hamburger1.Views.LookCoursePage";
             _typeNameTable[67] = "Hamburger1.Views.LookCoursePage.CourseModel";
-            _typeNameTable[68] = "Hamburger1.Views.MainPage";
-            _typeNameTable[69] = "Hamburger1.Converters.MusicConverter";
-            _typeNameTable[70] = "Hamburger1.Views.RelaxPage";
-            _typeNameTable[71] = "Hamburger1.ViewModels.SettingsPageViewModel";
-            _typeNameTable[72] = "Hamburger1.ViewModels.SettingsPartViewModel";
-            _typeNameTable[73] = "Hamburger1.ViewModels.AboutPartViewModel";
-            _typeNameTable[74] = "Template10.Converters.ValueWhenConverter";
-            _typeNameTable[75] = "Hamburger1.Views.SettingsPage";
-            _typeNameTable[76] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[77] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[78] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[79] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[80] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[81] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[82] = "Template10.Behaviors.MessageDialogAction";
-            _typeNameTable[83] = "Hamburger1.Views.Shell";
-            _typeNameTable[84] = "Hamburger1.Views.Splash";
-            _typeNameTable[85] = "Hamburger1.Views.TermSettingPage";
-            _typeNameTable[86] = "Hamburger1.Views.TodoPage";
+            _typeNameTable[68] = "Hamburger1.ViewModels.MainPageViewModel";
+            _typeNameTable[69] = "Hamburger1.Views.MainPage";
+            _typeNameTable[70] = "Hamburger1.Converters.MusicConverter";
+            _typeNameTable[71] = "Hamburger1.Views.RelaxPage";
+            _typeNameTable[72] = "Hamburger1.ViewModels.SettingsPageViewModel";
+            _typeNameTable[73] = "Hamburger1.ViewModels.SettingsPartViewModel";
+            _typeNameTable[74] = "Hamburger1.ViewModels.AboutPartViewModel";
+            _typeNameTable[75] = "Template10.Converters.ValueWhenConverter";
+            _typeNameTable[76] = "Hamburger1.Views.SettingsPage";
+            _typeNameTable[77] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[78] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[79] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[80] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[81] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[82] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[83] = "Template10.Behaviors.MessageDialogAction";
+            _typeNameTable[84] = "Hamburger1.Views.Shell";
+            _typeNameTable[85] = "Hamburger1.Views.Splash";
+            _typeNameTable[86] = "Hamburger1.Views.TermSettingPage";
+            _typeNameTable[87] = "Hamburger1.Views.TodoPage";
 
-            _typeTable = new global::System.Type[87];
+            _typeTable = new global::System.Type[88];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -314,25 +315,26 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
             _typeTable[65] = typeof(global::Hamburger1.Models.CourseModel);
             _typeTable[66] = typeof(global::Hamburger1.Views.LookCoursePage);
             _typeTable[67] = typeof(global::Hamburger1.Views.LookCoursePage.CourseModel);
-            _typeTable[68] = typeof(global::Hamburger1.Views.MainPage);
-            _typeTable[69] = typeof(global::Hamburger1.Converters.MusicConverter);
-            _typeTable[70] = typeof(global::Hamburger1.Views.RelaxPage);
-            _typeTable[71] = typeof(global::Hamburger1.ViewModels.SettingsPageViewModel);
-            _typeTable[72] = typeof(global::Hamburger1.ViewModels.SettingsPartViewModel);
-            _typeTable[73] = typeof(global::Hamburger1.ViewModels.AboutPartViewModel);
-            _typeTable[74] = typeof(global::Template10.Converters.ValueWhenConverter);
-            _typeTable[75] = typeof(global::Hamburger1.Views.SettingsPage);
-            _typeTable[76] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[77] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[78] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[79] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[80] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[81] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[82] = typeof(global::Template10.Behaviors.MessageDialogAction);
-            _typeTable[83] = typeof(global::Hamburger1.Views.Shell);
-            _typeTable[84] = typeof(global::Hamburger1.Views.Splash);
-            _typeTable[85] = typeof(global::Hamburger1.Views.TermSettingPage);
-            _typeTable[86] = typeof(global::Hamburger1.Views.TodoPage);
+            _typeTable[68] = typeof(global::Hamburger1.ViewModels.MainPageViewModel);
+            _typeTable[69] = typeof(global::Hamburger1.Views.MainPage);
+            _typeTable[70] = typeof(global::Hamburger1.Converters.MusicConverter);
+            _typeTable[71] = typeof(global::Hamburger1.Views.RelaxPage);
+            _typeTable[72] = typeof(global::Hamburger1.ViewModels.SettingsPageViewModel);
+            _typeTable[73] = typeof(global::Hamburger1.ViewModels.SettingsPartViewModel);
+            _typeTable[74] = typeof(global::Hamburger1.ViewModels.AboutPartViewModel);
+            _typeTable[75] = typeof(global::Template10.Converters.ValueWhenConverter);
+            _typeTable[76] = typeof(global::Hamburger1.Views.SettingsPage);
+            _typeTable[77] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[78] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[79] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[80] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[81] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[82] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[83] = typeof(global::Template10.Behaviors.MessageDialogAction);
+            _typeTable[84] = typeof(global::Hamburger1.Views.Shell);
+            _typeTable[85] = typeof(global::Hamburger1.Views.Splash);
+            _typeTable[86] = typeof(global::Hamburger1.Views.TermSettingPage);
+            _typeTable[87] = typeof(global::Hamburger1.Views.TodoPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -385,21 +387,22 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
         private object Activate_63_EditCoursePage() { return new global::Hamburger1.Views.EditCoursePage(); }
         private object Activate_65_CourseModel() { return new global::Hamburger1.Models.CourseModel(); }
         private object Activate_66_LookCoursePage() { return new global::Hamburger1.Views.LookCoursePage(); }
-        private object Activate_68_MainPage() { return new global::Hamburger1.Views.MainPage(); }
-        private object Activate_69_MusicConverter() { return new global::Hamburger1.Converters.MusicConverter(); }
-        private object Activate_70_RelaxPage() { return new global::Hamburger1.Views.RelaxPage(); }
-        private object Activate_71_SettingsPageViewModel() { return new global::Hamburger1.ViewModels.SettingsPageViewModel(); }
-        private object Activate_72_SettingsPartViewModel() { return new global::Hamburger1.ViewModels.SettingsPartViewModel(); }
-        private object Activate_73_AboutPartViewModel() { return new global::Hamburger1.ViewModels.AboutPartViewModel(); }
-        private object Activate_74_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
-        private object Activate_75_SettingsPage() { return new global::Hamburger1.Views.SettingsPage(); }
-        private object Activate_77_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_79_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_81_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_82_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
-        private object Activate_83_Shell() { return new global::Hamburger1.Views.Shell(); }
-        private object Activate_85_TermSettingPage() { return new global::Hamburger1.Views.TermSettingPage(); }
-        private object Activate_86_TodoPage() { return new global::Hamburger1.Views.TodoPage(); }
+        private object Activate_68_MainPageViewModel() { return new global::Hamburger1.ViewModels.MainPageViewModel(); }
+        private object Activate_69_MainPage() { return new global::Hamburger1.Views.MainPage(); }
+        private object Activate_70_MusicConverter() { return new global::Hamburger1.Converters.MusicConverter(); }
+        private object Activate_71_RelaxPage() { return new global::Hamburger1.Views.RelaxPage(); }
+        private object Activate_72_SettingsPageViewModel() { return new global::Hamburger1.ViewModels.SettingsPageViewModel(); }
+        private object Activate_73_SettingsPartViewModel() { return new global::Hamburger1.ViewModels.SettingsPartViewModel(); }
+        private object Activate_74_AboutPartViewModel() { return new global::Hamburger1.ViewModels.AboutPartViewModel(); }
+        private object Activate_75_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
+        private object Activate_76_SettingsPage() { return new global::Hamburger1.Views.SettingsPage(); }
+        private object Activate_78_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_80_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_82_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_83_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
+        private object Activate_84_Shell() { return new global::Hamburger1.Views.Shell(); }
+        private object Activate_86_TermSettingPage() { return new global::Hamburger1.Views.TermSettingPage(); }
+        private object Activate_87_TodoPage() { return new global::Hamburger1.Views.TodoPage(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -426,13 +429,13 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
             var newItem = (global::Template10.Controls.HamburgerButtonInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_77_BehaviorCollection(object instance, object item)
+        private void VectorAdd_78_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_81_ActionCollection(object instance, object item)
+        private void VectorAdd_82_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -927,53 +930,61 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 68:   //  Hamburger1.Views.MainPage
-                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_68_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 69:   //  Hamburger1.Converters.MusicConverter
-                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_69_MusicConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 70:   //  Hamburger1.Views.RelaxPage
-                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_70_RelaxPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 71:   //  Hamburger1.ViewModels.SettingsPageViewModel
+            case 68:   //  Hamburger1.ViewModels.MainPageViewModel
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_71_SettingsPageViewModel;
+                userType.Activator = Activate_68_MainPageViewModel;
+                userType.AddMemberName("Value");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 69:   //  Hamburger1.Views.MainPage
+                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_69_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 70:   //  Hamburger1.Converters.MusicConverter
+                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_70_MusicConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 71:   //  Hamburger1.Views.RelaxPage
+                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_71_RelaxPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 72:   //  Hamburger1.ViewModels.SettingsPageViewModel
+                userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_72_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  Hamburger1.ViewModels.SettingsPartViewModel
+            case 73:   //  Hamburger1.ViewModels.SettingsPartViewModel
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Hamburger1.ViewModels.AboutPartViewModel
+            case 74:   //  Hamburger1.ViewModels.AboutPartViewModel
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 74:   //  Template10.Converters.ValueWhenConverter
+            case 75:   //  Template10.Converters.ValueWhenConverter
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_74_ValueWhenConverter;
+                userType.Activator = Activate_75_ValueWhenConverter;
                 userType.AddMemberName("When");
                 userType.AddMemberName("Value");
                 userType.AddMemberName("Otherwise");
@@ -982,33 +993,33 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 75:   //  Hamburger1.Views.SettingsPage
+            case 76:   //  Hamburger1.Views.SettingsPage
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_75_SettingsPage;
+                userType.Activator = Activate_76_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 76:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 77:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 77:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 78:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_77_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_78_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 79:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 79:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 80:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
-                userType.Activator = Activate_79_EventTriggerBehavior;
+                userType.Activator = Activate_80_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -1016,51 +1027,51 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 80:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 81:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 81:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 82:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_81_ActionCollection;
+                userType.CollectionAdd = VectorAdd_82_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 82:   //  Template10.Behaviors.MessageDialogAction
+            case 83:   //  Template10.Behaviors.MessageDialogAction
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_82_MessageDialogAction;
+                userType.Activator = Activate_83_MessageDialogAction;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("OkText");
                 xamlType = userType;
                 break;
 
-            case 83:   //  Hamburger1.Views.Shell
+            case 84:   //  Hamburger1.Views.Shell
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_83_Shell;
+                userType.Activator = Activate_84_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 84:   //  Hamburger1.Views.Splash
+            case 85:   //  Hamburger1.Views.Splash
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  Hamburger1.Views.TermSettingPage
+            case 86:   //  Hamburger1.Views.TermSettingPage
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_85_TermSettingPage;
+                userType.Activator = Activate_86_TermSettingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  Hamburger1.Views.TodoPage
+            case 87:   //  Hamburger1.Views.TodoPage
                 userType = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_86_TodoPage;
+                userType.Activator = Activate_87_TodoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2023,130 +2034,140 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
             var that = (global::Hamburger1.Views.LookCoursePage)instance;
             that.course = (global::Hamburger1.Views.LookCoursePage.CourseModel)Value;
         }
-        private object get_93_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_93_MainPageViewModel_Value(object instance)
+        {
+            var that = (global::Hamburger1.ViewModels.MainPageViewModel)instance;
+            return that.Value;
+        }
+        private void set_93_MainPageViewModel_Value(object instance, object Value)
+        {
+            var that = (global::Hamburger1.ViewModels.MainPageViewModel)instance;
+            that.Value = (global::System.String)Value;
+        }
+        private object get_94_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::Hamburger1.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_94_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_95_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::Hamburger1.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_95_ValueWhenConverter_When(object instance)
+        private object get_96_ValueWhenConverter_When(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.When;
         }
-        private void set_95_ValueWhenConverter_When(object instance, object Value)
+        private void set_96_ValueWhenConverter_When(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.When = (global::System.Object)Value;
         }
-        private object get_96_ValueWhenConverter_Value(object instance)
+        private object get_97_ValueWhenConverter_Value(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Value;
         }
-        private void set_96_ValueWhenConverter_Value(object instance, object Value)
+        private void set_97_ValueWhenConverter_Value(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_97_ValueWhenConverter_Otherwise(object instance)
+        private object get_98_ValueWhenConverter_Otherwise(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Otherwise;
         }
-        private void set_97_ValueWhenConverter_Otherwise(object instance, object Value)
+        private void set_98_ValueWhenConverter_Otherwise(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Otherwise = (global::System.Object)Value;
         }
-        private object get_98_ValueWhenConverter_OtherwiseValueBack(object instance)
+        private object get_99_ValueWhenConverter_OtherwiseValueBack(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.OtherwiseValueBack;
         }
-        private void set_98_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
+        private void set_99_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.OtherwiseValueBack = (global::System.Object)Value;
         }
-        private object get_99_ValueWhenConverter_Debug(object instance)
+        private object get_100_ValueWhenConverter_Debug(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Debug;
         }
-        private void set_99_ValueWhenConverter_Debug(object instance, object Value)
+        private void set_100_ValueWhenConverter_Debug(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Debug = (global::System.Boolean)Value;
         }
-        private object get_100_Interaction_Behaviors(object instance)
+        private object get_101_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_100_Interaction_Behaviors(object instance, object Value)
+        private void set_101_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_101_EventTriggerBehavior_Actions(object instance)
+        private object get_102_EventTriggerBehavior_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.Actions;
         }
-        private object get_102_EventTriggerBehavior_EventName(object instance)
+        private object get_103_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_102_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_103_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_103_EventTriggerBehavior_SourceObject(object instance)
+        private object get_104_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_103_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_104_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_104_Behavior_AssociatedObject(object instance)
+        private object get_105_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_105_MessageDialogAction_Title(object instance)
+        private object get_106_MessageDialogAction_Title(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Title;
         }
-        private void set_105_MessageDialogAction_Title(object instance, object Value)
+        private void set_106_MessageDialogAction_Title(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_106_MessageDialogAction_Content(object instance)
+        private object get_107_MessageDialogAction_Content(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Content;
         }
-        private void set_106_MessageDialogAction_Content(object instance, object Value)
+        private void set_107_MessageDialogAction_Content(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Content = (global::System.String)Value;
         }
-        private object get_107_MessageDialogAction_OkText(object instance)
+        private object get_108_MessageDialogAction_OkText(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.OkText;
         }
-        private void set_107_MessageDialogAction_OkText(object instance, object Value)
+        private void set_108_MessageDialogAction_OkText(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.OkText = (global::System.String)Value;
@@ -2782,103 +2803,109 @@ namespace Hamburger1.Hamburger1_XamlTypeInfo
                 xamlMember.Getter = get_92_LookCoursePage_course;
                 xamlMember.Setter = set_92_LookCoursePage_course;
                 break;
+            case "Hamburger1.ViewModels.MainPageViewModel.Value":
+                userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hamburger1.ViewModels.MainPageViewModel");
+                xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Value", "String");
+                xamlMember.Getter = get_93_MainPageViewModel_Value;
+                xamlMember.Setter = set_93_MainPageViewModel_Value;
+                break;
             case "Hamburger1.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hamburger1.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "Hamburger1.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_93_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_94_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Hamburger1.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Hamburger1.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "Hamburger1.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_94_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_95_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Converters.ValueWhenConverter.When":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "When", "Object");
-                xamlMember.Getter = get_95_ValueWhenConverter_When;
-                xamlMember.Setter = set_95_ValueWhenConverter_When;
+                xamlMember.Getter = get_96_ValueWhenConverter_When;
+                xamlMember.Setter = set_96_ValueWhenConverter_When;
                 break;
             case "Template10.Converters.ValueWhenConverter.Value":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Value", "Object");
-                xamlMember.Getter = get_96_ValueWhenConverter_Value;
-                xamlMember.Setter = set_96_ValueWhenConverter_Value;
+                xamlMember.Getter = get_97_ValueWhenConverter_Value;
+                xamlMember.Setter = set_97_ValueWhenConverter_Value;
                 break;
             case "Template10.Converters.ValueWhenConverter.Otherwise":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Otherwise", "Object");
-                xamlMember.Getter = get_97_ValueWhenConverter_Otherwise;
-                xamlMember.Setter = set_97_ValueWhenConverter_Otherwise;
+                xamlMember.Getter = get_98_ValueWhenConverter_Otherwise;
+                xamlMember.Setter = set_98_ValueWhenConverter_Otherwise;
                 break;
             case "Template10.Converters.ValueWhenConverter.OtherwiseValueBack":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "OtherwiseValueBack", "Object");
-                xamlMember.Getter = get_98_ValueWhenConverter_OtherwiseValueBack;
-                xamlMember.Setter = set_98_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Getter = get_99_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Setter = set_99_ValueWhenConverter_OtherwiseValueBack;
                 break;
             case "Template10.Converters.ValueWhenConverter.Debug":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Debug", "Boolean");
-                xamlMember.Getter = get_99_ValueWhenConverter_Debug;
-                xamlMember.Setter = set_99_ValueWhenConverter_Debug;
+                xamlMember.Getter = get_100_ValueWhenConverter_Debug;
+                xamlMember.Setter = set_100_ValueWhenConverter_Debug;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_100_Interaction_Behaviors;
-                xamlMember.Setter = set_100_Interaction_Behaviors;
+                xamlMember.Getter = get_101_Interaction_Behaviors;
+                xamlMember.Setter = set_101_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_102_EventTriggerBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_102_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_103_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_103_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_103_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_104_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_104_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_104_Behavior_AssociatedObject;
+                xamlMember.Getter = get_105_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.MessageDialogAction.Title":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Title", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_MessageDialogAction_Title;
-                xamlMember.Setter = set_105_MessageDialogAction_Title;
+                xamlMember.Getter = get_106_MessageDialogAction_Title;
+                xamlMember.Setter = set_106_MessageDialogAction_Title;
                 break;
             case "Template10.Behaviors.MessageDialogAction.Content":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "Content", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_MessageDialogAction_Content;
-                xamlMember.Setter = set_106_MessageDialogAction_Content;
+                xamlMember.Getter = get_107_MessageDialogAction_Content;
+                xamlMember.Setter = set_107_MessageDialogAction_Content;
                 break;
             case "Template10.Behaviors.MessageDialogAction.OkText":
                 userType = (global::Hamburger1.Hamburger1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Hamburger1.Hamburger1_XamlTypeInfo.XamlMember(this, "OkText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_MessageDialogAction_OkText;
-                xamlMember.Setter = set_107_MessageDialogAction_OkText;
+                xamlMember.Getter = get_108_MessageDialogAction_OkText;
+                xamlMember.Setter = set_108_MessageDialogAction_OkText;
                 break;
             }
             return xamlMember;

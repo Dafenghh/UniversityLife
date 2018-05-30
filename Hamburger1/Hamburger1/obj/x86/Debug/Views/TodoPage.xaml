@@ -12,7 +12,7 @@
       mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:DetailPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+        <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
     </Page.DataContext>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -49,7 +49,14 @@
         <controls:PageHeader x:ConnectionId='7' x:Name="pageHeader"                       
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="ToDoList" />
+                             RelativePanel.AlignTopWithPanel="True" Text="ToDoList" >
+            <!--  secondary commands  -->
+            <controls:PageHeader.SecondaryCommands>
+                <AppBarButton x:ConnectionId='12'                                         Label="Settings" />
+                <AppBarButton x:ConnectionId='13'                                        Label="Privacy" />
+                <AppBarButton x:ConnectionId='14'                                      Label="About" />
+            </controls:PageHeader.SecondaryCommands>
+        </controls:PageHeader>
 
         <!--  content  -->
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 

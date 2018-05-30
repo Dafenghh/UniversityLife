@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
@@ -152,15 +153,20 @@ namespace CoursePage
             }
         }
 
-        private void SettingBtnClicked(object sender, RoutedEventArgs e)
+        private async void SettingBtnClicked(object sender, RoutedEventArgs e)
         {
             if (SettingGrid.Visibility == Visibility.Visible)
             {
+                CloseSettingSb.Begin();
+                LLM.Animator.Use(LLM.AnimationType.FadeOutUp).SetDuration(TimeSpan.FromMilliseconds(300)).PlayOn(SettingGrid);
+                await Task.Delay(300);
                 SettingGrid.Visibility = Visibility.Collapsed;
             }
             else
             {
+                OpenSettingSb.Begin();
                 SettingGrid.Visibility = Visibility.Visible;
+                LLM.Animator.Use(LLM.AnimationType.FadeInDown).SetDuration(TimeSpan.FromMilliseconds(300)).PlayOn(SettingGrid);
             }
         }
 

@@ -110,7 +110,11 @@ namespace CoursePage
 
         private async void AddTermBtn_Clicked(object sender, RoutedEventArgs e)
         {
-            
+            var res = await addTermDialog.ShowAsync();
+            if (res == ContentDialogResult.Secondary)
+            { 
+                
+            }
         }
 
         private void DelTermBtn_Clicked(object sender, RoutedEventArgs e)

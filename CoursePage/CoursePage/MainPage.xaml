@@ -128,7 +128,7 @@
                 <TextBlock FontSize="16" HorizontalAlignment="Center">课程表</TextBlock>
                 <TextBlock FontSize="13">未设置学期</TextBlock>
             </StackPanel>
-            <AppBarButton HorizontalAlignment="Right" Click="SettingBtnClicked">
+            <AppBarButton Foreground="{ThemeResource Friday-Foreground}" HorizontalAlignment="Right" Click="SettingBtnClicked">
                 <AppBarButton.Icon>
                     <SymbolIcon Width="30" Height="30" Symbol="Add" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <SymbolIcon.RenderTransform>

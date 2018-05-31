@@ -36,7 +36,7 @@ namespace Hamburger1.Views
             LoadData();
         }
 
-        private void LoadData()
+        private async void LoadData() //Reflesh CourseSchedule
         {
             CourseGrid.Children.Clear();
             CourseGrid.RowDefinitions.Clear();
@@ -103,10 +103,11 @@ namespace Hamburger1.Views
                     Grid.SetColumn(btn, i);
                     Grid.SetRow(btn, j);
 
-                    //var currentWeek = userdata.attachmentBO.nowWeekMsg.nowWeek.ToString();
-                    //var course = await Class.Model.CourseManager.GetCourse(i, j, null, null, currentWeek);
-                    CourseModel course = new CourseModel();
-                    course = null;
+                    var currentWeek = "1";
+                    var course = await CourseManager.GetCourse(i, j, null, null, currentWeek);
+
+                    //CourseModel course = new CourseModel();
+                    //course = null;
                     if (course != null)
                     {
                         btn.Content = course.BtnContent;
@@ -115,25 +116,22 @@ namespace Hamburger1.Views
                         btn.Style = (Style)Resources["FullButtonStyle"];
                         btn.Background = new SolidColorBrush(Colors.Gray);
                         btn.Background.Opacity = 0.4;
-                        //var weeks = course.period.Split(' ', ',');
-                        //foreach (var item in weeks)
-                        //{
-                        //    if (course.sectionStart == j)
-                        //    {
-                        //        Grid.SetRowSpan(btn, course.sectionEnd - course.sectionStart + 1);
-                        //    }
-                        //    else
-                        //    {
-                        //        btn.Visibility = Visibility.Collapsed;
-                        //    }
+                        var weeks = course.period.Split(' ', ',');
+                        foreach (var item in weeks)
+                        {
+                            if (course.sectionStart == j)
+                            {
+                                Grid.SetRowSpan(btn, course.sectionEnd - course.sectionStart + 1);
+                            }
+                            else
+                            {
+                                btn.Visibility = Visibility.Collapsed;
+                            }
 
-                        //    if (item == userdata.attachmentBO.nowWeekMsg.nowWeek.ToString())
-                        //    {
+                            btn.Background = new SolidColorBrush(course.CourseButton.BackgroundColor);
+                            btn.Background.Opacity = 1;
 
-                        //        btn.Background = new SolidColorBrush(course.CourseButton.BackgroundColor);
-                        //        btn.Background.Opacity = 1;
-                        //    }
-                        //}
+                        }
                     }
                     CourseGrid.Children.Add(btn);
                     LLM.Animator.Use(LLM.AnimationType.FadeIn).PlayOn(btn);
@@ -236,8 +234,8 @@ namespace Hamburger1.Views
             var list = sender as ListView;
             if (list.SelectedIndex != -1)
             {
-                var nowweek = data.nowWeek;
-                if (list.SelectedIndex == (nowweek - 1))
+                var currentWeek = data.currentWeek;
+                if (list.SelectedIndex == (currentWeek - 1))
                 {
                     WeekText.Text = "第" + (list.SelectedIndex + 1) + "周";
                     WeekText.Foreground = new SolidColorBrush(Color.FromArgb(255, 7, 153, 252));
@@ -256,7 +254,7 @@ namespace Hamburger1.Views
             {
                 var week = WeekList.Items[WeekList.SelectedIndex] as string;
                 week = week.Replace("第", "").Replace("周", "");
-                data.nowWeek = int.Parse(week);
+                data.currentWeek = int.Parse(week);
                 Frame.Navigate(typeof(MainPage));
             }
         }

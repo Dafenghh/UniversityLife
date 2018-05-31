@@ -35,6 +35,7 @@ namespace Hamburger1.Views
         }
 
         public CourseModel course { get; set; }
+
         public Data data = new Data();
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -69,7 +70,7 @@ namespace Hamburger1.Views
             {
                 course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
             }
-            mainListView.DataContext = course;
+            mainListView.DataContext = course;      
         }
 
         private async void mainListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -223,89 +224,32 @@ namespace Hamburger1.Views
 
         private async void AddBtn_Clicked(object sender, RoutedEventArgs e)
         {
-            //if (course.name != null && course.name != "")
-            //{
-            //    var courselist = await Class.Model.CourseManager.GetCourse();
-            //    var json = Class.Data.Json.ToJsonData(courselist);
-            //    if (course.id != null && json.Contains(course.id))
-            //    {
-            //        var dialog = new DialogBox()
-            //        {
-            //            Title = "提示",
-            //            PrimaryButtonText = "取消",
-            //            SecondaryButtonText = "确定"
-            //        };
-            //        dialog.mainTextBlock.Text = "是否替换原有课程";
-            //        if (await dialog.ShowAsync() == ContentDialogResult.Secondary)
-            //        {
-            //            for (int i = 0; i < courselist.Count; i++)
-            //            {
-            //                if (courselist[i].id == course.id)
-            //                {
-            //                    var coursejson = Class.Data.Json.ToJsonData(course as Class.Model.CourseManager.CourseModel);
-            //                    courselist[i] = Class.Data.Json.DataContractJsonDeSerialize<Class.Model.CourseManager.CourseModel>(coursejson);
-            //                    await Class.Model.CourseManager.SaveCourse(courselist);
-            //                    Frame.GoBack();
-            //                    break;
-            //                }
-            //            }
-            //        }
-            //    }
-            //    else
-            //    {
-            //        var coursejson = Class.Data.Json.ToJsonData(course as Class.Model.CourseManager.CourseModel);
-            //        await Class.Model.CourseManager.Add(Data.DataContractJsonDeSerialize<Class.Model.CourseManager.CourseModel>(coursejson));
-            //        Frame.GoBack();
-            //    }
-            //}
-            //else
-            //{
-            //    Tools.ShowMsgAtFrame("请填写课程名称");
-            //}
+            if (course.name != null && course.name != "")
+            {
+                var courselist = await CourseManager.GetCourseList();
+
+                if (course.id != null) // update course
+                {
+                    await CourseManager.UpdateCourse(course as Models.CourseModel);
+                    Frame.GoBack();   
+                }
+
+                else  // add course
+                {
+                    course.generateId();
+                    course.updateLessonsByPeroid();
+                    await CourseManager.Add(course as Models.CourseModel);
+                    Frame.GoBack();
+                }
+            }
+            else
+            {
+                Tools.ShowMsgAtFrame("请填写课程名称");
+            }
             var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
             nav.Navigate(typeof(MainPage), null);
         }
 
-        public class CourseModel : Models.CourseModel
-        {
-            public string weektext
-            {
-                get
-                {
-                    string[] weeks;
-                    if (smartPeriod != null) weeks = smartPeriod.Split(' '); else weeks = period.Split(' ', ',');
 
-                    var firstWeekValid = int.TryParse(weeks[0], out int firstWeek);
-                    var lastWeekValid = int.TryParse(weeks[weeks.Count() - 1], out int lastWeek);
-
-                    if (firstWeekValid && lastWeekValid && (lastWeek - firstWeek == weeks.Count() - 1))
-                    {
-                        return weeks[0] + "-" + weeks[weeks.Count() - 1] + "周";
-                    }
-                    else
-                    {
-                        return period + "周";
-                    }
-                }
-            }
-            public string sectext
-            {
-                get
-                {
-                    string result = "";
-                    result = " 周" + Data.GetWeekString(day.ToString());
-                    result = result + " ";
-                    if (sectionStart == sectionEnd)
-                    {
-                        result = result + "第" + sectionStart + "节";
-                    }
-                    else
-                    {
-                        result = result + sectionStart + "-" + sectionEnd + "节";
-                    }
-                    return result;
-                }
-            }
-        }
     }
 }

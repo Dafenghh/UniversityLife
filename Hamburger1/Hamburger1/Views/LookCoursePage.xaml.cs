@@ -35,15 +35,15 @@ namespace Hamburger1.Views
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
-            //var courselist = await Class.Model.CourseManager.GetCourse();
-            //foreach (var item in courselist)
-            //{
-            //    if (course.id == item.id)
-            //    {
-            //        course = Class.Data.Json.DataContractJsonDeSerialize<CourseModel>(Class.Data.Json.ToJsonData(item));
-            //        break;
-            //    }
-            //}
+          /*  var courselist = await CourseManager.GetCourseList();
+            foreach (var item in courselist)
+            {
+                if (course.id == item.id)
+                {
+                    course = Class.Data.Json.DataContractJsonDeSerialize<CourseModel>(Class.Data.Json.ToJsonData(item));
+                    break;
+                }
+            }*/
             CourseInfoList.DataContext = course;
             Title.Text = course.name;
         }
@@ -57,58 +57,23 @@ namespace Hamburger1.Views
                 SecondaryButtonText = "确定"
             };
             dialog.mainTextBlock.Text = "确定要删除该课程?";
-            //if (await dialog.ShowAsync() == ContentDialogResult.Secondary)
-            //    await Class.Model.CourseManager.Remove(course);
-            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
-            nav.Navigate(typeof(MainPage), null);
+            if (await dialog.ShowAsync() == ContentDialogResult.Secondary)
+            {
+                await CourseManager.Remove(course);
+                Frame rootFrame = Window.Current.Content as Frame;
+                rootFrame.Navigate(typeof(MainPage));
+            }
         }
 
         private void EditCourseBtn_Clicked(object sender, RoutedEventArgs e)
         {
-            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
-            nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+            // var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+            // nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
         }
 
-        public class CourseModel : Models.CourseModel
-        {
-            public string weektext
-            {
-                get
-                {
-                    string[] weeks;
-                    if (smartPeriod != null) weeks = smartPeriod.Split(' '); else weeks = period.Split(' ', ',');
 
-                    var firstWeekValid = int.TryParse(weeks[0], out int firstWeek);
-                    var lastWeekValid = int.TryParse(weeks[weeks.Count() - 1], out int lastWeek);
-
-                    if (firstWeekValid && lastWeekValid && (lastWeek - firstWeek == weeks.Count() - 1))
-                    {
-                        return weeks[0] + "-" + weeks[weeks.Count() - 1] + "周";
-                    }
-                    else
-                    {
-                        return smartPeriod + "周";
-                    }
-                }
-            }
-            public string sectext
-            {
-                get
-                {
-                    string result = "";
-                    result = " 周" + Data.GetWeekString(day.ToString());
-                    result = result + " ";
-                    if (sectionStart == sectionEnd)
-                    {
-                        result = result + "第" + sectionStart + "节";
-                    }
-                    else
-                    {
-                        result = result + sectionStart + "-" + sectionEnd + "节";
-                    }
-                    return result;
-                }
-            }
-        }
     }
 }

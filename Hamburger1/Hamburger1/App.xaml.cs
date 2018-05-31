@@ -8,6 +8,8 @@ using System;
 using System.Linq;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Controls;
+using System.Collections.ObjectModel;
+using Hamburger1.Models;
 
 namespace Hamburger1
 {
@@ -17,10 +19,14 @@ namespace Hamburger1
     [Bindable]
     sealed partial class App : BootStrapper
     {
+        public ObservableCollection<CourseModel> CourseList = new ObservableCollection<CourseModel>();
+        public ObservableCollection<Lesson> LessonList = new ObservableCollection<Lesson>();
+        public int currentWeek = 1;
         public App()
         {
             InitializeComponent();
             SplashFactory = (e) => new Views.Splash(e);
+            LoadData();
 
             #region app settings
 
@@ -31,6 +37,11 @@ namespace Hamburger1
             ShowShellBackButton = settings.UseShellBackButton;
 
             #endregion
+        }
+        public async void LoadData()
+        {
+            CourseList = await CourseManager.GetCourseListFromDatabase();
+            LessonList = await CourseManager.GetLessonListFromDatabase();
         }
 
         public override UIElement CreateRootElement(IActivatedEventArgs e)

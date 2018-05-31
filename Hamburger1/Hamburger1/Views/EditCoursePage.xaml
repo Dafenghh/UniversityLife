@@ -50,10 +50,11 @@
                     <Grid Height="30">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="80"/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="83*"/>
+                            <ColumnDefinition Width="1317*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">老师</TextBlock>
-                        <TextBox Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E" Text="{x:Bind Path=course.teacher,Mode=TwoWay}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center" Margin="0,5">老师</TextBlock>
+                        <TextBox Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E" Text="{x:Bind Path=course.teacher,Mode=TwoWay}" VerticalAlignment="Center" Margin="5,-1,0,-1" Grid.ColumnSpan="2"/>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>
@@ -63,7 +64,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">周数</TextBlock>
-                        <TextBlock Grid.Column="1" Foreground="#FF6E6E6E" Text="{x:Bind Path=course.weektext,Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBlock>
+                        <TextBlock Grid.Column="1" Foreground="#FF6E6E6E" Text="{x:Bind Path=course.weektext,Mode=OneWay}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,5,0,0"></TextBlock>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>

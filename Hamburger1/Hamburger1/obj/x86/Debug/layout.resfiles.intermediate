@@ -9,5 +9,21 @@ Assets\Wide310x150Logo.scale-200.png
 Assets\后来的我们图片.jpg
 Assets\书本图片.png
 Assets\五月天 - 后来的我们.mp3
+App.xbf
+Controls\AddTodoControl.xbf
 Hamburger1.xr.xml
+Styles\Custom.xbf
+Views\AddTodoPage.xbf
+Views\Busy.xbf
+Views\ContentDialog.xbf
+Views\DetailPage.xbf
+Views\EditCoursePage.xbf
+Views\LookCoursePage.xbf
+Views\MainPage.xbf
+Views\RelaxPage.xbf
+Views\SettingsPage.xbf
+Views\Shell.xbf
+Views\Splash.xbf
+Views\TermSettingPage.xbf
+Views\TodoPage.xbf
 Properties\Default.rd.xml

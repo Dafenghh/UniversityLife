@@ -101,7 +101,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程状态</TextBlock>
-            <ComboBox Grid.Column="1" HorizontalAlignment="Stretch">
+            <ComboBox x:Name="StudyStateComboBox"   Grid.Column="1" HorizontalAlignment="Stretch" SelectionChanged="ComboBox_SelectionChanged">
                 <ComboBoxItem Content="预习中"/>
                 <ComboBoxItem Content="作业中"/>
                 <ComboBoxItem Content="复习中"/>
@@ -112,8 +112,8 @@
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程作业</TextBlock>
-            <TextBox Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center" >课程作业</TextBlock>
+            <TextBox Grid.Column="1" VerticalAlignment="Center" Text="{x:Bind Path=course.currentLesson.homework, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="6" Height="30" Margin="0,10">
             <Grid.ColumnDefinitions>
@@ -123,22 +123,7 @@
             <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程资料</TextBlock>
             <Button Grid.Column="1" HorizontalAlignment="Right" Content="+" Click="Button_Click"/>
         </Grid>
-        <ListView Grid.Row="6" SelectionChanged="ListView_SelectionChanged">
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                    <Setter Property="Padding" Value="0"></Setter>
-                    <Setter Property="Margin" Value="10,0"></Setter>
-                    <Setter Property="BorderBrush" Value="{ThemeResource Friday-BorderBrush}"></Setter>
-                    <Setter Property="BorderThickness" Value="0,0,0,0.5"></Setter>
-                </Style>
-            </ListView.ItemContainerStyle>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <Button x:Name="ma" Grid.Row="7" Content="{x:Bind Path=course.currentLesson.studyMaterial}" Click="Button_Click_1" HorizontalAlignment="Stretch"/>
         <ContentDialog x:Name="SecDialog" Title="选择上课节数" PrimaryButtonText="取消" SecondaryButtonText="确定">
             <ContentDialog.Template>
                 <ControlTemplate TargetType="ContentDialog">

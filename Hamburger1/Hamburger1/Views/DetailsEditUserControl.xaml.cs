@@ -17,11 +17,17 @@ namespace Hamburger1.Views
 {
     public sealed partial class DetailsEditUserControl : UserControl
     {
-        private TodoItemViewModels ViewModels = ((App)App.Current).ViewModels;
+        private TodoItemViewModels ViewModels = null;
         public DetailsEditUserControl()
         {
-            this.DataContext = this.ViewModels;
             this.InitializeComponent();
+            if (Windows.ApplicationModel.DesignMode.DesignModeEnabled)
+            {
+                return;
+            }
+            ViewModels = ((App)App.Current).ViewModels;
+            this.DataContext = this.ViewModels;
+            
         }
         private async void CreateClick(object sender, RoutedEventArgs e)
         {

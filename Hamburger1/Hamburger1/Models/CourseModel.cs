@@ -93,7 +93,7 @@ namespace Hamburger1.Models
         public int sectionEnd { get; set; }
         public int sectionStart { get; set; }
 
-        public Lesson currentLesson { get; set; }
+        public Lesson currentLesson { get; set; } = new Lesson();
 
         public Lesson getLesson()
         {

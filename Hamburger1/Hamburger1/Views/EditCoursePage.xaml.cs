@@ -73,7 +73,8 @@ namespace Hamburger1.Views
               }
               mainListView.DataContext = course;     */
               course = ((App)App.Current).EditingCourse;
-            mainListView.DataContext = course;
+            this.DataContext = course;
+            StudyStateComboBox.SelectedIndex = course.currentLesson.studyState;
         }
 
         private async void mainListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -253,29 +254,6 @@ namespace Hamburger1.Views
             nav.Navigate(typeof(MainPage), null);
         }
 
-        private async void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var file = await Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.GetFileAsync(faToken);
-            if (file != null)
-            {
-                // Launch the retrieved file
-                var success = await Windows.System.Launcher.LaunchFileAsync(file);
-
-                if (success)
-                {
-                    // File launched
-                }
-                else
-                {
-                    // File launch failed
-                }
-            }
-            else
-            {
-                // Could not find file
-            }
-        }
-
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             FileOpenPicker picker = new FileOpenPicker();
@@ -293,10 +271,45 @@ namespace Hamburger1.Views
 
                 // Add to FA without metadata
                 faToken = Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.Add(file);
+                course.currentLesson.studyMaterial = faToken;
+                ma.Content = file.Name;
             }
             else
             {
                 // The file picker was dismissed with no file selected to save
+            }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var box = sender as ComboBox;
+            if (box.SelectedIndex != -1)
+            {
+                course.currentLesson.studyState = box.SelectedIndex;
+            }
+        }
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var file = await Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.GetFileAsync(course.currentLesson.studyMaterial);
+            if (file != null)
+            {
+                // Launch the retrieved file
+                var success = await Windows.System.Launcher.LaunchFileAsync(file);
+
+                if (success)
+                {
+                    
+                    // File launched
+                }
+                else
+                {
+                    // File launch failed
+                }
+            }
+            else
+            {
+                // Could not find file
             }
         }
     }

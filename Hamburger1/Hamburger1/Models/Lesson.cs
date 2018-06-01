@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace Hamburger1.Models
         private string _homework = "";
         private string _studyMaterial = "";
         private int _studyState = 0;
-        
+
 
         public Lesson()
         {
@@ -67,6 +68,7 @@ namespace Hamburger1.Models
                 RaisePropertyChanged("studyMaterial");
             }
         }
+
         public int studyState
         {
             get
@@ -80,6 +82,10 @@ namespace Hamburger1.Models
             }
         }
 
+        /*void concatenateStudyMaterialString()
+        {
+            studyMaterial = studyMaterialDescription + "#" + studyMaterialUristr;
+        }*/
 
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -89,4 +95,5 @@ namespace Hamburger1.Models
         }
 
     }
+
 }

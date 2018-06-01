@@ -46,6 +46,7 @@ namespace Hamburger1.Views
             }*/
             CourseInfoList.DataContext = course;
             Title.Text = course.name;
+            StudyStateComboBox.SelectedIndex = course.currentLesson.studyState;
         }
 
         private async void DelCourseBtn_Clicked(object sender, RoutedEventArgs e)
@@ -76,6 +77,27 @@ namespace Hamburger1.Views
             //rootFrame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
         }
 
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var file = await Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.GetFileAsync(course.currentLesson.studyMaterial);
+            if (file != null)
+            {
+                // Launch the retrieved file
+                var success = await Windows.System.Launcher.LaunchFileAsync(file);
 
+                if (success)
+                {
+                    // File launched
+                }
+                else
+                {
+                    // File launch failed
+                }
+            }
+            else
+            {
+                // Could not find file
+            }
+        }
     }
 }

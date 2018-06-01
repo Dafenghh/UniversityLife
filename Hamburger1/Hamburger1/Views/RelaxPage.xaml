@@ -51,7 +51,18 @@
         </VisualStateManager.VisualStateGroups>
 
         <!--  header  -->
-        <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"                             RelativePanel.AlignRightWithPanel="True"                             RelativePanel.AlignTopWithPanel="True" Text="Main Page">            <!--  secondary commands  -->            <controls:PageHeader.SecondaryCommands>                <AppBarButton Click="{x:Bind ViewModel.GotoSettings}" Label="Settings" />                <AppBarButton Click="{x:Bind ViewModel.GotoPrivacy}" Label="Privacy" />                <AppBarButton Click="{x:Bind ViewModel.GotoAbout}" Label="About" />            </controls:PageHeader.SecondaryCommands>        </controls:PageHeader>
+        <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True" Text="Main Page">
+
+            <!--  secondary commands  -->
+            <controls:PageHeader.SecondaryCommands>
+                <AppBarButton Click="{x:Bind ViewModel.GotoSettings}" Label="Settings" />
+                <AppBarButton Click="{x:Bind ViewModel.GotoPrivacy}" Label="Privacy" />
+                <AppBarButton Click="{x:Bind ViewModel.GotoAbout}" Label="About" />
+            </controls:PageHeader.SecondaryCommands>
+
+        </controls:PageHeader>
 
         <!--  content  -->
 

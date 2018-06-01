@@ -22,6 +22,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.System.Threading;
+using Windows.UI.Notifications;
+using System.Diagnostics;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
@@ -38,10 +41,31 @@ namespace Hamburger1.Views
             this.ViewModels = ((App)App.Current).ViewModels;
             this.DataContext = this.ViewModels;
             this.ViewModels.UpdatingItemDelegate = NavigateToNewPage;
+
+            TimeSpan delay = TimeSpan.FromSeconds(4);
+            ThreadPoolTimer DelayTimer = ThreadPoolTimer.CreateTimer(UpdateTile, delay);
+            ThreadPoolTimer.CreatePeriodicTimer(UpdateTile, delay);
         }
 
+        int tile_index = 0;
         TodoItemViewModels ViewModels { get; set; }
 
+        private void UpdateTile(ThreadPoolTimer timer)
+        {
+            if ( ViewModels.AllItems.Count != 0)
+            {
+                Debug.WriteLine(ViewModels.AllItems[tile_index].Description);
+                var xmlDoc = TileService.CreateTiles(ViewModels.AllItems[tile_index]);
+
+                var updater = TileUpdateManager.CreateTileUpdaterForApplication();
+                TileNotification notification = new TileNotification(xmlDoc);
+                updater.Update(notification);
+                if (++tile_index == ViewModels.AllItems.Count)
+                {
+                    tile_index = 0;
+                }
+            }
+        }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {

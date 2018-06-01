@@ -10,6 +10,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Controls;
 using System.Collections.ObjectModel;
 using Hamburger1.Models;
+using Hamburger1.ViewModels;
+using Hamburger1.Services;
 
 namespace Hamburger1
 {
@@ -22,12 +24,17 @@ namespace Hamburger1
         public ObservableCollection<CourseModel> CourseList = new ObservableCollection<CourseModel>();
         public ObservableCollection<Lesson> LessonList = new ObservableCollection<Lesson>();
         public int currentWeek = 1;
+        public TodoItemViewModels ViewModels = new TodoItemViewModels();
+        public bool IsSuspend { get; set; } = false;
+        public DataAccess DataBaseForTodoList { get; set; }
         public App()
         {
             InitializeComponent();
             SplashFactory = (e) => new Views.Splash(e);
             LoadData();
 
+            this.DataBaseForTodoList = new DataAccess();
+            DataBaseForTodoList.ReadData();
             #region app settings
 
             // some settings must be set in app.constructor

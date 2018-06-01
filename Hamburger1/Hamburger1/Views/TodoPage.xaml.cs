@@ -1,11 +1,18 @@
-﻿using System;
+﻿using Hamburger1.Models;
+using Hamburger1.ViewModels;
+using Hamburger1.Services;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using Windows.ApplicationModel.Core;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Streams;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -28,22 +35,112 @@ namespace Hamburger1.Views
         public TodoPage()
         {
             this.InitializeComponent();
+            this.ViewModels = ((App)App.Current).ViewModels;
+            this.DataContext = this.ViewModels;
+            this.ViewModels.UpdatingItemDelegate = NavigateToNewPage;
         }
 
-        private async void AddButton_Click(object sender, RoutedEventArgs e)
+        TodoItemViewModels ViewModels { get; set; }
+
+
+        private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            CoreApplicationView newView = CoreApplication.CreateNewView();
-            int newViewId = 0;
-            await newView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            ViewModels.SelectedItem = null;
+            ViewModels.ClearEdits();
+            //if (DetailEditPanel.Visibility == Visibility.Collapsed) Frame.Navigate(typeof(AddTodoPage), "");
+
+        }
+
+
+
+        private void TodoItem_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            TodoItem item = (e.ClickedItem as TodoItem);
+            ViewModels.SelectedItem = item;
+           // if (DetailEditPanel.Visibility == Visibility.Collapsed) Frame.Navigate(typeof(AddTodoPage), "");
+
+        }
+
+        private void DeleteAppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ViewModels.SelectedItem == null) return;
+            ViewModels.RemoveTodoItem(ViewModels.SelectedItem.Id);
+        }
+        private void NavigateToNewPage()
+        {
+            //if (DetailEditPanel.Visibility == Visibility.Collapsed) Frame.Navigate(typeof(AddTodoPage), "");
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (e.NavigationMode == NavigationMode.New)
             {
-                Frame frame = new Frame();
-                frame.Navigate(typeof(Views.AddTodoPage), null);
-                Window.Current.Content = frame;
-                // You have to activate the window in order to show it later.
-                Window.Current.Activate();
-                newViewId = ApplicationView.GetForCurrentView().Id;
-            });
-            bool viewShown = await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newViewId);
+                ApplicationData.Current.LocalSettings.Values.Remove("MainPage");
+            }
+            else
+            {
+                if (ApplicationData.Current.LocalSettings.Values.ContainsKey("MainPage"))
+                {
+                    var composite = ApplicationData.Current.LocalSettings.Values["MainPage"] as ApplicationDataCompositeValue;
+                    ViewModels.EditingTitle = (string)composite["Title"];
+                    ViewModels.EditingDetail = (string)composite["Detail"];
+                    ViewModels.EditingDueDate = DataAccess.StringToDateTime((string)composite["Date"]);
+                    ViewModels.EditingImgSrc = new Uri((string)composite["ImgSrc"]);
+                    ApplicationData.Current.LocalSettings.Values.Remove("MainPage");
+                }
+            }
+            DataTransferManager.GetForCurrentView().DataRequested += OnShareDataRequested;
+
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            bool suspending = ((App)App.Current).IsSuspend;
+            if (suspending)
+            {
+                var composite = new ApplicationDataCompositeValue();
+                composite["Title"] = ViewModels.EditingTitle;
+                composite["Detail"] = ViewModels.EditingDetail;
+                composite["Date"] = DataAccess.DateTimeToString(ViewModels.EditingDueDate);
+                composite["ImgSrc"] = ViewModels.EditingImgSrc.ToString();
+                ApplicationData.Current.LocalSettings.Values["MainPage"] = composite;
+            }
+            DataTransferManager.GetForCurrentView().DataRequested -= OnShareDataRequested;
+        }
+        private void OnShareDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            var request = args.Request;
+            var item = ViewModels.SharingItem;
+            request.Data.Properties.Title = item.Title;
+            request.Data.Properties.Description = item.Description;
+            var date = item.DueDate;
+            var DueDateStr = "\nDue date: " + date.Year + '-' + date.Month + '-' + date.Day;
+            request.Data.SetText(item.Description + DueDateStr);
+
+            try
+            {
+                request.Data.SetBitmap(RandomAccessStreamReference.CreateFromUri(
+
+                  item.CoverImg));
+            }
+            finally
+            {
+                request.GetDeferral().Complete();
+            }
+        }
+
+        private async void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+           /* StringBuilder result = ((App)App.Current).DataBaseForTodoList.Query(SearchBox.Text);
+            var dialog = new ContentDialog()
+            {
+                Title = "提示",
+                Content = result,
+                PrimaryButtonText = "确定",
+                FullSizeDesired = false,
+            };
+            await dialog.ShowAsync();*/
         }
     }
 }
+

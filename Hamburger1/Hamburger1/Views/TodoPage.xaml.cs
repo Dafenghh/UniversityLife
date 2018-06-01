@@ -165,6 +165,11 @@ namespace Hamburger1.Views
             };
             await dialog.ShowAsync();*/
         }
+
+        private void pageHeader_Opened(object sender, object e)
+        {
+
+        }
     }
 }
 

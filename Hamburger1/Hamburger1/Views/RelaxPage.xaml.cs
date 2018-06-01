@@ -71,5 +71,10 @@ namespace Hamburger1.Views
             EllStoryBoard.Pause();
             InitializePropertyValues();
         }
+
+        private void pageHeader_Opened(object sender, object e)
+        {
+
+        }
     }
 }

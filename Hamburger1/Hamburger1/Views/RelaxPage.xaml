@@ -53,7 +53,7 @@
         <!--  header  -->
         <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="Main Page">
+                             RelativePanel.AlignTopWithPanel="True" Text="Relax" Opened="pageHeader_Opened">
 
             <!--  secondary commands  -->
             <controls:PageHeader.SecondaryCommands>

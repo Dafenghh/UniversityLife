@@ -15,7 +15,6 @@ namespace Hamburger1.Services
         {
             conn = new SQLiteConnection("SQLiteCourse.db");
 
-
             //create CourseItem 
             string sql = @"CREATE TABLE IF NOT EXISTS
                              Course(Id              VARCHAR(36) PRIMARY KEY NOT NULL,

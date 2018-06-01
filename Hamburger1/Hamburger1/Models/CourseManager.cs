@@ -21,15 +21,19 @@ namespace Hamburger1.Models
 
         public static async Task<ObservableCollection<CourseModel> > GetCourseListFromDatabase(string year = null, string term = null)
         {
-            var CourseList = new ObservableCollection<CourseModel>();
+           var CourseList = new ObservableCollection<CourseModel>();
             SQLiteConnection conn = SQLiteService.conn;
-            string sql = @"SELECT Id,Name,ClassRoom,Period,Day,SectionStart,SectionEnd,LessonIds FROM Course";
+            string sql = @"SELECT Id,Name,ClassRoom,Period,Day,SectionStart,SectionEnd,LessonIds FROM Course;";
             using (var statement = conn.Prepare(sql))
             {
                 while (SQLiteResult.ROW == statement.Step())
                 {
+                    var c = new CourseModel(statement[0].ToString(), statement[1].ToString(), statement[2].ToString(), statement[3].ToString(),
+                                                    (int)(long)statement[4], (int)(long)statement[5], (int)(long)statement[6], statement[7].ToString());
+                    var tt = 1;
+
                     CourseList.Add(new CourseModel(statement[0].ToString(), statement[1].ToString(), statement[2].ToString(), statement[3].ToString(),
-                                                    (int)statement[4], (int)statement[5], (int)statement[6], statement[7].ToString()));
+                                                    (int)(long)statement[4], (int)(long)statement[5], (int)(long)statement[6], statement[7].ToString()));
                 }
             }
             return CourseList;
@@ -44,8 +48,8 @@ namespace Hamburger1.Models
             {
                 while (SQLiteResult.ROW == statement.Step())
                 {
-                    LessonList.Add(new Lesson(statement[0].ToString(), statement[1].ToString(), (int)statement[2], (int)statement[3],
-                                    statement[4].ToString(),statement[5].ToString(),(int)statement[6]));
+                    LessonList.Add(new Lesson(statement[0].ToString(), statement[1].ToString(), (int)(long)statement[2], (int)(long)statement[3],
+                                    statement[4].ToString(),statement[5].ToString(),(int)(long)statement[6]));
                 }
             }
             return LessonList;

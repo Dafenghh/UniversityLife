@@ -19,6 +19,7 @@ namespace Hamburger1.Models
 
         public static async Task<ObservableCollection<CourseModel> > GetCourseListFromDatabase(string year = null, string term = null)
         {
+            foreach(var )
             return new ObservableCollection<CourseModel>();
         }
 

@@ -67,11 +67,11 @@ namespace Hamburger1.Views
 
         private void EditCourseBtn_Clicked(object sender, RoutedEventArgs e)
         {
-            // var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
-            // nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+            var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+            nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
 
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+            //Frame rootFrame = Window.Current.Content as Frame;
+            //rootFrame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
         }
 
 

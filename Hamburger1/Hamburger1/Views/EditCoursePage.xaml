@@ -19,6 +19,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid  Height="50" BorderBrush="{ThemeResource Friday-BorderBrush}" BorderThickness="0,0,0,0.5" VerticalAlignment="Top">
             <TextBlock FontSize="18" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center">编辑课程</TextBlock>
@@ -99,10 +100,11 @@
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">学习程度</TextBlock>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程状态</TextBlock>
             <ComboBox Grid.Column="1" HorizontalAlignment="Stretch">
-                <ComboBoxItem Content="预习"/>
-                <ComboBoxItem Content="作业"/>
+                <ComboBoxItem Content="预习中"/>
+                <ComboBoxItem Content="作业中"/>
+                <ComboBoxItem Content="复习中"/>
             </ComboBox>
         </Grid>
         <Grid Grid.Row="5" Height="30" Margin="0,10">
@@ -110,7 +112,15 @@
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">学习资料</TextBlock>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程作业</TextBlock>
+            <TextBox Grid.Column="1" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="6" Height="30" Margin="0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程资料</TextBlock>
             <Button Grid.Column="1" HorizontalAlignment="Right" Content="+" Click="Button_Click"/>
         </Grid>
         <ListView Grid.Row="6" SelectionChanged="ListView_SelectionChanged">

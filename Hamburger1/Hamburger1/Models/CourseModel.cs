@@ -84,6 +84,12 @@ namespace Hamburger1.Models
                     await CourseManager.AddLesson(lesson);
                 }
             }
+            this.lessonIds = lessonIds[0];
+            for (int i = 1; i < weeks.Count(); i++)
+            {
+
+                this.lessonIds += "," + lessonIds[i];
+            }
         }
 
 
@@ -201,7 +207,7 @@ namespace Hamburger1.Models
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
-        public CourseBtnStyle CourseButton { get; set; }
+        public CourseBtnStyle CourseButton { get; set; } = new CourseBtnStyle();
         public class CourseBtnStyle
         {
             public Windows.UI.Color ForegroundColor { get; set; }

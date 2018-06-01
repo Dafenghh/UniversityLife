@@ -60,15 +60,17 @@ namespace Hamburger1.Views
             if (await dialog.ShowAsync() == ContentDialogResult.Secondary)
             {
                 await CourseManager.Remove(course);
-                Frame rootFrame = Window.Current.Content as Frame;
-                rootFrame.Navigate(typeof(MainPage));
+                var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+                nav.Navigate(typeof(MainPage), null);
             }
         }
 
         private void EditCourseBtn_Clicked(object sender, RoutedEventArgs e)
         {
+
+
             var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
-            nav.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));
+            nav.Navigate(typeof(EditCoursePage), null);
 
             //Frame rootFrame = Window.Current.Content as Frame;
             //rootFrame.Navigate(typeof(EditCoursePage), Data.ToJsonData(course));

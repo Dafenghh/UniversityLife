@@ -24,6 +24,7 @@ namespace Hamburger1
         public ObservableCollection<CourseModel> CourseList = new ObservableCollection<CourseModel>();
         public ObservableCollection<Lesson> LessonList = new ObservableCollection<Lesson>();
         public int currentWeek = 1;
+        public CourseModel EditingCourse = null;
         public TodoItemViewModels ViewModels = new TodoItemViewModels();
         public bool IsSuspend { get; set; } = false;
         public DataAccess DataBaseForTodoList { get; set; }

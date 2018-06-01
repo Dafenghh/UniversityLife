@@ -41,37 +41,39 @@ namespace Hamburger1.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (e.Parameter == null)
-            {
-                course = new CourseModel()
-                {
-                    day = 1,
-                    period = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
-                    beginYear = data.beginYear,
-                    endYear = data.beginYear,
-                    term = data.term,
-                    sectionStart = 1,
-                    sectionEnd = 1
-                };
-            }
-            else if ((e.Parameter as int[]) != null)
-            {
-                course = new CourseModel()
-                {
-                    day = (e.Parameter as int[])[0],
-                    period = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
-                    beginYear = data.beginYear,
-                    endYear = data.beginYear,
-                    term = data.term,
-                    sectionStart = (e.Parameter as int[])[1],
-                    sectionEnd = (e.Parameter as int[])[1]
-                };
-            }
-            else if (e.Parameter != null && (e.Parameter as int[]) == null)
-            {
-                course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
-            }
-            mainListView.DataContext = course;      
+            /*  if (e.Parameter == null)
+              {
+                  course = new CourseModel()
+                  {
+                      day = 1,
+                      period = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
+                      beginYear = data.beginYear,
+                      endYear = data.beginYear,
+                      term = data.term,
+                      sectionStart = 1,
+                      sectionEnd = 1
+                  };
+              }
+              else if ((e.Parameter as int[]) != null)
+              {
+                  course = new CourseModel()
+                  {
+                      day = (e.Parameter as int[])[0],
+                      period = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
+                      beginYear = data.beginYear,
+                      endYear = data.beginYear,
+                      term = data.term,
+                      sectionStart = (e.Parameter as int[])[1],
+                      sectionEnd = (e.Parameter as int[])[1]
+                  };
+              }
+              else if (e.Parameter != null && (e.Parameter as int[]) == null)
+              {
+                  course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
+              }
+              mainListView.DataContext = course;     */
+              course = ((App)App.Current).EditingCourse;
+            mainListView.DataContext = course;
         }
 
         private async void mainListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

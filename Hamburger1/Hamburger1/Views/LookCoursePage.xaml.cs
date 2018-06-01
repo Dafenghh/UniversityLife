@@ -34,7 +34,7 @@ namespace Hamburger1.Views
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            course = Data.DataContractJsonDeSerialize<CourseModel>(e.Parameter.ToString());
+            course = ((App)App.Current).EditingCourse;
           /*  var courselist = await CourseManager.GetCourseList();
             foreach (var item in courselist)
             {

@@ -148,14 +148,25 @@ namespace Hamburger1.Views
                 //frame.Navigate(typeof(Views.LookCoursePage), Data.ToJsonData(btn.DataContext as CourseModel));
                 //Window.Current.Content = frame;
                 var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
-                nav.Navigate(typeof(Views.LookCoursePage), Data.ToJsonData(btn.DataContext as CourseModel));
+                ((App)App.Current).EditingCourse = btn.DataContext as CourseModel;
+                nav.Navigate(typeof(Views.LookCoursePage), null);
                 //(Window.Current.Content as Frame).Navigate(typeof(LookCoursePage), Data.ToJsonData(btn.DataContext as CourseModel));
             }
             else
             {
-
+                ((App)App.Current).EditingCourse = new CourseModel()
+                {
+                    day = Grid.GetRow(btn),
+                    period = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
+                    beginYear = data.beginYear,
+                    endYear = data.beginYear,
+                    term = data.term,
+                    sectionStart = Grid.GetColumn(btn),
+                    sectionEnd = Grid.GetColumn(btn)
+                };
                 var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
                 nav.Navigate(typeof(Views.EditCoursePage), null);
+
                 //Frame.Navigate(typeof(EditCoursePage));
                 //(Window.Current.Content as Frame).Navigate(typeof(CourseListPage), new string[] { Grid.GetRow(btn).ToString(), Grid.GetColumn(btn).ToString() });
             }

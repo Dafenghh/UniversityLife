@@ -10,16 +10,24 @@
     <Page.Resources>
     </Page.Resources>
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
         <Grid  Height="50" BorderBrush="{ThemeResource Friday-BorderBrush}" BorderThickness="0,0,0,0.5" VerticalAlignment="Top">
-            <AppBarButton x:ConnectionId='10'                           Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Back"></AppBarButton>
             <TextBlock FontSize="18" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center">编辑课程</TextBlock>
             <Button x:ConnectionId='11' Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch"                       >确定</Button>
         </Grid>
-        <Grid Height="20" Margin="10,55,10,0" BorderThickness="0,0,0,0.5" BorderBrush="{ThemeResource Friday-Foreground}" VerticalAlignment="Top">
+        <Grid Grid.Row="1" Height="20" BorderThickness="0,0,0,0.5" BorderBrush="{ThemeResource Friday-Foreground}" VerticalAlignment="Top">
             <TextBlock Foreground="{ThemeResource Friday-Foreground}" FontSize="12">当前课程</TextBlock>
         </Grid>
-        <ScrollViewer Margin="0,80,0,0">
-            <ListView x:ConnectionId='4' x:Name="mainListView"                                                 >
+        <ScrollViewer Grid.Row="2">
+            <ListView x:ConnectionId='5' x:Name="mainListView"                                                 >
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -36,7 +44,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">课程名称</TextBlock>
-                        <TextBox x:ConnectionId='9' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                              VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        <TextBox x:ConnectionId='10' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                              VerticalAlignment="Center" Margin="5,0,0,0"/>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>
@@ -46,7 +54,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">老师</TextBlock>
-                        <TextBox x:ConnectionId='8' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                                 VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        <TextBox x:ConnectionId='9' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                                 VerticalAlignment="Center" Margin="5,0,0,0"/>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>
@@ -56,7 +64,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">周数</TextBlock>
-                        <TextBlock x:ConnectionId='7' Grid.Column="1" Foreground="#FF6E6E6E"                                                  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBlock>
+                        <TextBlock x:ConnectionId='8' Grid.Column="1" Foreground="#FF6E6E6E"                                                  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBlock>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>
@@ -66,7 +74,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">节数</TextBlock>
-                        <TextBlock x:ConnectionId='6' Grid.Column="1" Foreground="#FF6E6E6E"                                                 VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBlock>
+                        <TextBlock x:ConnectionId='7' Grid.Column="1" Foreground="#FF6E6E6E"                                                 VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"></TextBlock>
                     </Grid>
                 </ListViewItem>
                 <ListViewItem>
@@ -76,11 +84,49 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">地点</TextBlock>
-                        <TextBox x:ConnectionId='5' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                                   VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        <TextBox x:ConnectionId='6' Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF6E6E6E"                                                   VerticalAlignment="Center" Margin="5,0,0,0"/>
                     </Grid>
                 </ListViewItem>
             </ListView>
         </ScrollViewer>
+        <Grid Grid.Row="3" Height="20" BorderThickness="0,0,0,0.5" BorderBrush="{ThemeResource Friday-Foreground}" VerticalAlignment="Top">
+            <TextBlock Foreground="{ThemeResource Friday-Foreground}" FontSize="12">课程信息</TextBlock>
+        </Grid>
+        <Grid Grid.Row="4" Height="30" Margin="0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">学习程度</TextBlock>
+            <ComboBox Grid.Column="1" HorizontalAlignment="Stretch">
+                <ComboBoxItem Content="预习"/>
+                <ComboBoxItem Content="作业"/>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="5" Height="30" Margin="0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Foreground="Black" VerticalAlignment="Center">学习资料</TextBlock>
+            <Button x:ConnectionId='4' Grid.Column="1" HorizontalAlignment="Right" Content="+"                     />
+        </Grid>
+        <ListView Grid.Row="6">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="Padding" Value="0"></Setter>
+                    <Setter Property="Margin" Value="10,0"></Setter>
+                    <Setter Property="BorderBrush" Value="{ThemeResource Friday-BorderBrush}"></Setter>
+                    <Setter Property="BorderThickness" Value="0,0,0,0.5"></Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <ContentDialog x:ConnectionId='2' x:Name="SecDialog" Title="选择上课节数" PrimaryButtonText="取消" SecondaryButtonText="确定">
             <ContentDialog.Template>
                 <ControlTemplate TargetType="ContentDialog">

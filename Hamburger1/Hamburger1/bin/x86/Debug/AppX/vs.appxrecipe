@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T16:14:26.603</Modified>
+      <Modified>2018-05-31T01:44:48.674</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.exe">
       <PackagePath>entrypoint\Hamburger1.exe</PackagePath>
-      <Modified>2018-05-30T16:14:25.062</Modified>
+      <Modified>2018-05-31T01:44:38.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
       <PackagePath>LLMAnimator.dll</PackagePath>
@@ -612,11 +612,11 @@
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T16:14:25.962</Modified>
+      <Modified>2018-05-31T01:44:47.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\Hamburger1.exe">
       <PackagePath>Hamburger1.exe</PackagePath>
-      <Modified>2018-05-30T16:14:26.598</Modified>
+      <Modified>2018-05-31T01:44:48.666</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -158,8 +158,8 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontFamily" />
@@ -167,12 +167,6 @@
     <RootType FullName="CoursePage.DialogBox" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Resources" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -183,6 +177,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="SelectedIndex" />
       <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
       <RootProperty Name="Content" />
@@ -197,6 +197,13 @@
       <RootProperty Name="Path" />
       <RootProperty Name="ElementName" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
@@ -209,14 +216,6 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Icon" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="CoursePage.EditCoursePage" />
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
@@ -253,6 +252,14 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="CoursePage.LookCoursePage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">

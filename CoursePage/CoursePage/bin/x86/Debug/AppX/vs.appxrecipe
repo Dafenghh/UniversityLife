@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T07:13:29.504</Modified>
+      <Modified>2018-05-31T07:00:38.628</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.exe">
       <PackagePath>entrypoint\CoursePage.exe</PackagePath>
-      <Modified>2018-05-30T07:13:28.055</Modified>
+      <Modified>2018-05-31T07:00:37.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
       <PackagePath>LLMAnimator.dll</PackagePath>
@@ -539,7 +539,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\CoursePage.xr.xml">
       <PackagePath>CoursePage.xr.xml</PackagePath>
-      <Modified>2018-05-29T15:27:02.255</Modified>
+      <Modified>2018-05-31T06:50:37.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-30T07:13:29.074</Modified>
+      <Modified>2018-05-31T06:50:38.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github code\UniversityLife\CoursePage\CoursePage\bin\x86\Debug\Core\CoursePage.exe">
       <PackagePath>CoursePage.exe</PackagePath>
-      <Modified>2018-05-30T07:13:29.500</Modified>
+      <Modified>2018-05-31T07:00:38.622</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

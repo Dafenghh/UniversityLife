@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.UI;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -24,6 +26,7 @@ namespace CoursePage
     /// </summary>
     public sealed partial class EditCoursePage : Page
     {
+        string faToken;
         public EditCoursePage()
         {
             this.InitializeComponent();
@@ -264,6 +267,25 @@ namespace CoursePage
             //{
             //    Tools.ShowMsgAtFrame("请填写课程名称");
             //}
+            var file= await Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.GetFileAsync(faToken);
+            if (file != null)
+            {
+                // Launch the retrieved file
+                var success = await Windows.System.Launcher.LaunchFileAsync(file);
+
+                if (success)
+                {
+                    // File launched
+                }
+                else
+                {
+                    // File launch failed
+                }
+            }
+            else
+            {
+                // Could not find file
+            }
         }
 
         public class CourseModel : CoursePage.CourseModel
@@ -305,6 +327,30 @@ namespace CoursePage
                     }
                     return result;
                 }
+            }
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            FileOpenPicker picker = new FileOpenPicker();
+            picker.FileTypeFilter.Add(".txt");
+            picker.FileTypeFilter.Add(".doc");
+            picker.FileTypeFilter.Add(".pdf");
+            picker.FileTypeFilter.Add(".ppt");
+            picker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+
+            var file = await picker.PickSingleFileAsync();
+            if (file != null)
+            {
+                // Add to MRU with metadata (For example, a string that represents the date)
+                //string mruToken = Windows.Storage.AccessCache.StorageApplicationPermissions.MostRecentlyUsedList.Add(file, "20120716");
+
+                // Add to FA without metadata
+                faToken = Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.Add(file);
+            }
+            else
+            {
+                // The file picker was dismissed with no file selected to save
             }
         }
     }

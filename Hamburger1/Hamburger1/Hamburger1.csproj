@@ -110,6 +110,7 @@
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="Services\SQLiteForTodoList.cs" />
     <Compile Include="Services\SQLiteService.cs" />
+    <Compile Include="Services\TileService.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />

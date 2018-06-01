@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLitePCL;
+using Hamburger1.Services;
 
 namespace Hamburger1.Models
 {
@@ -19,25 +21,48 @@ namespace Hamburger1.Models
 
         public static async Task<ObservableCollection<CourseModel> > GetCourseListFromDatabase(string year = null, string term = null)
         {
-            foreach(var )
-            return new ObservableCollection<CourseModel>();
+            var CourseList = new ObservableCollection<CourseModel>();
+            SQLiteConnection conn = SQLiteService.conn;
+            string sql = @"SELECT Id,Name,ClassRoom,Period,Day,SectionStart,SectionEnd,LessonIds FROM Course";
+            using (var statement = conn.Prepare(sql))
+            {
+                while (SQLiteResult.ROW == statement.Step())
+                {
+                    CourseList.Add(new CourseModel(statement[0].ToString(), statement[1].ToString(), statement[2].ToString(), statement[3].ToString(),
+                                                    (int)statement[4], (int)statement[5], (int)statement[6], statement[7].ToString()));
+                }
+            }
+            return CourseList;
         }
 
         public static async Task<ObservableCollection<Lesson>> GetLessonListFromDatabase(string year = null, string term = null)
         {
-            return new ObservableCollection<Lesson>();
+            var LessonList = new ObservableCollection<Lesson>();
+            SQLiteConnection conn = SQLiteService.conn;
+            string sql = @"SELECT Id,CourseId,Week,Day,Homework,StudyMaterial,StudyState FROM Lesson";
+            using (var statement = conn.Prepare(sql))
+            {
+                while (SQLiteResult.ROW == statement.Step())
+                {
+                    LessonList.Add(new Lesson(statement[0].ToString(), statement[1].ToString(), (int)statement[2], (int)statement[3],
+                                    statement[4].ToString(),statement[5].ToString(),(int)statement[6]));
+                }
+            }
+            return LessonList;
         }
 
         public static async Task<bool> AddLesson(Lesson lesson, string year = null, string term = null)
         {
             var lessonList = ((App)App.Current).LessonList;
             lessonList.Add(lesson);
+            SQLiteService.InsertLesson(lesson.id,lesson.courseId,lesson.week,lesson.day,lesson.homework,lesson.studyMaterial,lesson.studyState);
             return true;
         }
 
 
         public static async Task<bool> UpdateCourse(CourseModel course, string year = null, string term = null)
         {
+            SQLiteService.UpdateCourse(course.id, course.name, course.classroom, course.period, course.day, course.sectionStart, course.sectionEnd, course.lessonIds);
             return true;
         }
 
@@ -49,6 +74,7 @@ namespace Hamburger1.Models
             if (CanAdd(course, courselist))
             {
                 courselist.Add(course);
+                SQLiteService.InsertCourse(course.id, course.name, course.classroom, course.period, course.day, course.sectionStart, course.sectionEnd, course.lessonIds);
                 return true;
             }
             else
@@ -69,6 +95,7 @@ namespace Hamburger1.Models
                     courselist.RemoveAt(i);
                 }
             }
+            SQLiteService.DeleteCourse(course.id);
         }
         // Remove Course By Id
         public static async Task Remove(string id, string year = null, string term = null)
@@ -81,6 +108,7 @@ namespace Hamburger1.Models
                     courselist.RemoveAt(i);
                 }
             }
+            SQLiteService.DeleteCourse(id);
         }
 
         /*

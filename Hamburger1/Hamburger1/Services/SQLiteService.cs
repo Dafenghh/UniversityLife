@@ -81,8 +81,9 @@ namespace Hamburger1.Services
         {
             try
             {
-                string sql = @"UPDATE Course SET (Name,ClassRoom,Period,Day,SectionStart,SectionEnd,LessonIds)
-                                VALUES(?,?,?,?,?,?,?) WHERE Id = ?;";
+                string sql = @"UPDATE Course 
+                               SET Name=?,ClassRoom=?,Period=?,Day=?,SectionStart=?,SectionEnd=?,LessonIds=? 
+                               WHERE Id = ?;";
                 using (var statement = conn.Prepare(sql))
                 {
                     statement.Bind(1, courseName);
@@ -137,8 +138,9 @@ namespace Hamburger1.Services
         {
             try
             {
-                string sql = @"UPDATE Lesson SET (CourseId,Week,Day,Homework,StudyMaterial,StudyState)
-                                VALUES(?,?,?,?,?,?) WHERE Id = ?;";
+                string sql = @"UPDATE Lesson 
+                               SET CourseId=?,Week=?,Day=?,Homework=?,StudyMaterial=?,StudyState=?
+                               WHERE Id = ?;";
                 using (var statement = conn.Prepare(sql))
                 {
                     statement.Bind(1, courseId);

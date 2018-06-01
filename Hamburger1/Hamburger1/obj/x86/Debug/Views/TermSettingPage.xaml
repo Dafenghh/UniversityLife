@@ -9,9 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid  Height="50" BorderBrush="{ThemeResource Friday-BorderBrush}" BorderThickness="0,0,0,0.5" VerticalAlignment="Top">
-            <AppBarButton x:ConnectionId='6'                           Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Back"></AppBarButton>
             <TextBlock FontSize="18" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center">编辑课程</TextBlock>
-            <AppBarButton x:ConnectionId='7'                            Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Add" HorizontalAlignment="Right"></AppBarButton>
+            <AppBarButton x:ConnectionId='6'                            Foreground="{ThemeResource Friday-Foreground}" Background="{x:Null}" VerticalAlignment="Stretch" Icon="Add" HorizontalAlignment="Right"></AppBarButton>
         </Grid>
         <ScrollViewer Margin="0,50,0,0">
             <ListView x:ConnectionId='4' x:Name="termListView">

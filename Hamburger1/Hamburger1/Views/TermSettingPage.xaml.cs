@@ -67,10 +67,6 @@ namespace Hamburger1.Views
 
         }
 
-        private void GoBackBtn_Clicked(object sender, RoutedEventArgs e)
-        {
-            Frame.GoBack();
-        }
 
         public class TermData : Models.MyTermListItem, INotifyPropertyChanged
         {

@@ -537,7 +537,6 @@ D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Microsoft.Xaml
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Template10Library.pri.xml
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\ProjectArchitectures.txt
-D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Hamburger1.csprojResolveAssemblyReference.cache
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Views\ContentDialog.g.i.cs
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Views\ContentDialog.g.cs
 D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Views\EditCoursePage.g.i.cs
@@ -1147,3 +1146,4 @@ D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Ham
 D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\obj\x86\Debug\Template10Library.pri.xml
 D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\obj\x86\Debug\ProjectArchitectures.txt
+D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\Hamburger1.csprojAssemblyReference.cache

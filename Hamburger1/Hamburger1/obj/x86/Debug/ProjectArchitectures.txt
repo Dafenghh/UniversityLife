@@ -1,1 +1,1 @@
-D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Hamburger1.csproj;x86
+D:\github code\UniversityLife\Hamburger1\Hamburger1\Hamburger1.csproj;x86

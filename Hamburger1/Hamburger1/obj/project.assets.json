@@ -24334,11 +24334,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Chrome\\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
+      "projectUniqueName": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
       "projectName": "Hamburger1",
-      "projectPath": "D:\\Chrome\\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
+      "projectPath": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\Hamburger1.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Chrome\\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\\Hamburger1\\Hamburger1\\obj\\",
+      "outputPath": "D:\\github code\\UniversityLife\\Hamburger1\\Hamburger1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

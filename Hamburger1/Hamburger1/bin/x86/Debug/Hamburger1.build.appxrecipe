@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>92211ab1-5481-4a1a-9111-a3dd87b81b72</PackageIdentityName>
     <PackageIdentityPublisher>CN=daren</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\github code\UniversityLife\Hamburger1\Hamburger1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.exe">
       <PackagePath>entrypoint\Hamburger1.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\llmanimator\0.1.0\lib\uap10.0\LLMAnimator.dll">
@@ -385,94 +385,94 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library.dll">
       <PackagePath>Template10Library.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\书本图片.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\书本图片.png">
       <PackagePath>Assets\书本图片.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\五月天 - 后来的我们.mp3">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\五月天 - 后来的我们.mp3">
       <PackagePath>Assets\五月天 - 后来的我们.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Assets\后来的我们图片.jpg">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Assets\后来的我们图片.jpg">
       <PackagePath>Assets\后来的我们图片.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.xr.xml">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Hamburger1.xr.xml">
       <PackagePath>Hamburger1.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Controls\AddTodoControl.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Controls\AddTodoControl.xbf">
       <PackagePath>Controls\AddTodoControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Styles\Custom.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Styles\Custom.xbf">
       <PackagePath>Styles\Custom.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\AddTodoPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\AddTodoPage.xbf">
       <PackagePath>Views\AddTodoPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\Busy.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\Busy.xbf">
       <PackagePath>Views\Busy.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\ContentDialog.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\ContentDialog.xbf">
       <PackagePath>Views\ContentDialog.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\DetailPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\DetailPage.xbf">
       <PackagePath>Views\DetailPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\EditCoursePage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\EditCoursePage.xbf">
       <PackagePath>Views\EditCoursePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\LookCoursePage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\LookCoursePage.xbf">
       <PackagePath>Views\LookCoursePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\RelaxPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\RelaxPage.xbf">
       <PackagePath>Views\RelaxPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\SettingsPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\SettingsPage.xbf">
       <PackagePath>Views\SettingsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\Shell.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\Shell.xbf">
       <PackagePath>Views\Shell.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\Splash.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\Splash.xbf">
       <PackagePath>Views\Splash.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\TermSettingPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\TermSettingPage.xbf">
       <PackagePath>Views\TermSettingPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Views\TodoPage.xbf">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Views\TodoPage.xbf">
       <PackagePath>Views\TodoPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -505,11 +505,11 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
       <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Chrome\UniversityLife-22a72df65883b6eeae13c309aa9ccb04f13a956a\Hamburger1\Hamburger1\bin\x86\Debug\Core\Hamburger1.exe">
+    <AppxPackagedFile Include="D:\github code\UniversityLife\Hamburger1\Hamburger1\bin\x86\Debug\Core\Hamburger1.exe">
       <PackagePath>Hamburger1.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

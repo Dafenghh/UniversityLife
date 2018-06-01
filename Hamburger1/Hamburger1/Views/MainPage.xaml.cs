@@ -186,10 +186,9 @@ namespace Hamburger1.Views
                 switch (list.SelectedIndex)
                 {
                     case 0:
-                        Frame frame = new Frame();
-                        frame.Navigate(typeof(Views.TermSettingPage), null);
-                        Window.Current.Content = frame;
-                       // (Window.Current.Content as Frame).Navigate(typeof(TermSettingPage));
+                        var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+                        nav.Navigate(typeof(Views.TermSettingPage), null);
+                        // (Window.Current.Content as Frame).Navigate(typeof(TermSettingPage));
                         break;
                     case 1:
                         var item = list.Items[list.SelectedIndex] as ListViewItem;

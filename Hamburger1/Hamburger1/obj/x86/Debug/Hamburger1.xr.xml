@@ -337,12 +337,6 @@
       <RootProperty Name="MinWindowWidth" />
     </RootType>
     <RootType FullName="Hamburger1.Views.DetailPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="ItemTemplate" />
@@ -355,6 +349,12 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="ItemContainerTransitions" />
       <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
       <RootProperty Name="Content" />

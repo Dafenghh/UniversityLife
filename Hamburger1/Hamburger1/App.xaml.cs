@@ -48,6 +48,7 @@ namespace Hamburger1
         }
         public async void LoadData()
         {
+            SQLiteService.LoadDatabase();
             CourseList = await CourseManager.GetCourseListFromDatabase();
             LessonList = await CourseManager.GetLessonListFromDatabase();
         }
